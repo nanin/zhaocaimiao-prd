@@ -1,0 +1,7 @@
+﻿$axure.loadCurrentPage(
+(function() {
+    var _ = function() { var r={},a=arguments; for(var i=0; i<a.length; i+=2) r[a[i]]=a[i+1]; return r; }
+    var _creator = function() { return _(b,c,d,e,f,g,h,g,i,[j,k,l,m,n,o,p,q,r],s,_(t,u,v,w,x,y,z,_(),A,_(B,C,D,E,F,_(G,H,I,J),K,null,L,E,M,E,N,O,P,null,Q,R,S,T,U,V,W,R),X,_(),Y,_(),Z,_(ba,[])),bb,_(),bc,_());}; 
+var b="url",c="职级填写——多维度职级.html",d="generationDate",e=new Date(1488251084040.41),f="isCanvasEnabled",g=false,h="isAdaptiveEnabled",i="variables",j="OnLoadVariable",k="item1",l="item2",m="item3",n="NewVariable2",o="NewVariable3",p="NewVariable4",q="NewVariable5",r="NewVariable6",s="page",t="packageId",u="84a69f9331744db8968832d8746d2df4",v="type",w="Axure:Page",x="name",y="职级填写——多维度职级",z="notes",A="style",B="baseStyle",C="627587b6038d43cca051c114ac41ad32",D="pageAlignment",E="near",F="fill",G="fillType",H="solid",I="color",J=0xFFFFFFFF,K="image",L="imageHorizontalAlignment",M="imageVerticalAlignment",N="imageRepeat",O="auto",P="favicon",Q="sketchFactor",R="0",S="colorStyle",T="appliedColor",U="fontName",V="Applied Font",W="borderWidth",X="adaptiveStyles",Y="interactionMap",Z="diagram",ba="objects",bb="masters",bc="objectPaths";
+return _creator();
+})());

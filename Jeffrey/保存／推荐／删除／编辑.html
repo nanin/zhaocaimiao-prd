@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>保存／推荐／删除／编辑</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/保存／推荐／删除／编辑/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/保存／推荐／删除／编辑/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5510" class="ax_default box_1">
+        <div id="u5510_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5511" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>保存与推荐</span></p><p style="font-size:16px;"><span>——与ATS后台的数据交互逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5512" class="ax_default box_1">
+        <div id="u5512_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5513" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>设计初衷</span></p><p style="font-size:13px;"><span>－员工端为求简洁易懂，任何保存简历的操作都会更新ATS端的数据（而不是需要经历“保存”“提交”两个可能让普通用户匪夷所思的专业步骤）。</span></p><p style="font-size:13px;"><span>－然而更新数据，不能调用已有的投递方法，否则任何简历的更新都会产生重复数据，这也是不合适的。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Right Arrow Button) -->
+      <div id="u5514" class="ax_default box_1">
+        <img id="u5514_img" class="img " src="images/保存／推荐／删除／编辑/u5514.png"/>
+        <!-- Unnamed () -->
+        <div id="u5515" class="text" style="visibility: visible;">
+          <p><span>员工，保存简历</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5516" class="ax_default box_1">
+        <div id="u5516_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5517" class="text" style="visibility: visible;">
+          <p><span>执行“创建／更新”作业</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Right Arrow Button) -->
+      <div id="u5518" class="ax_default box_1">
+        <img id="u5518_img" class="img " src="images/保存／推荐／删除／编辑/u5514.png"/>
+        <!-- Unnamed () -->
+        <div id="u5519" class="text" style="visibility: visible;">
+          <p><span>员工，投递职位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5520" class="ax_default box_1">
+        <div id="u5520_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5521" class="text" style="visibility: visible;">
+          <p><span>执行“投递”作业</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5522" class="ax_default connector">
+        <img id="u5522_seg0" class="img " src="images/保存／推荐／删除／编辑/u5522_seg0.png" alt="u5522_seg0"/>
+        <img id="u5522_seg1" class="img " src="images/职位列表（首页）_awaiting_ui_/u649_seg1.png" alt="u5522_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5523" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5524" class="ax_default connector">
+        <img id="u5524_seg0" class="img " src="images/保存／推荐／删除／编辑/u5522_seg0.png" alt="u5524_seg0"/>
+        <img id="u5524_seg1" class="img " src="images/职位列表（首页）_awaiting_ui_/u649_seg1.png" alt="u5524_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5525" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Right Arrow Button) -->
+      <div id="u5526" class="ax_default box_1">
+        <img id="u5526_img" class="img " src="images/保存／推荐／删除／编辑/u5514.png"/>
+        <!-- Unnamed () -->
+        <div id="u5527" class="text" style="visibility: visible;">
+          <p><span>HR，加入职位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5528" class="ax_default box_1">
+        <div id="u5528_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5529" class="text" style="visibility: visible;">
+          <p><span>创建流程，并同步到门户</span></p><p><span style="color:#008000;">详见“推荐冲突的处理”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5530" class="ax_default connector">
+        <img id="u5530_seg0" class="img " src="images/保存／推荐／删除／编辑/u5522_seg0.png" alt="u5530_seg0"/>
+        <img id="u5530_seg1" class="img " src="images/职位列表（首页）_awaiting_ui_/u649_seg1.png" alt="u5530_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5531" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Hot Spot) -->
+      <div id="u5532" class="ax_default">
+      </div>
+
+      <!-- Unnamed (Right Arrow Button) -->
+      <div id="u5533" class="ax_default box_1">
+        <img id="u5533_img" class="img " src="images/保存／推荐／删除／编辑/u5514.png"/>
+        <!-- Unnamed () -->
+        <div id="u5534" class="text" style="visibility: visible;">
+          <p><span>员工，删除人选</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u5535" class="ax_default box_1">
+        <img id="u5535_img" class="img " src="images/保存／推荐／删除／编辑/u5535.png"/>
+        <!-- Unnamed () -->
+        <div id="u5536" class="text" style="visibility: visible;">
+          <p><span>ATS端有关联该人选的流程？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5537" class="ax_default connector">
+        <img id="u5537_seg0" class="img " src="images/保存／推荐／删除／编辑/u5522_seg0.png" alt="u5537_seg0"/>
+        <img id="u5537_seg1" class="img " src="images/职位列表（首页）_awaiting_ui_/u649_seg1.png" alt="u5537_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5538" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5539" class="ax_default connector">
+        <img id="u5539_seg0" class="img " src="images/保存／推荐／删除／编辑/u5539_seg0.png" alt="u5539_seg0"/>
+        <img id="u5539_seg1" class="img " src="images/保存／推荐／删除／编辑/u5539_seg1.png" alt="u5539_seg1"/>
+        <img id="u5539_seg2" class="img " src="images/保存／推荐／删除／编辑/u5539_seg2.png" alt="u5539_seg2"/>
+        <img id="u5539_seg3" class="img " src="images/保存／推荐／删除／编辑/u5539_seg3.png" alt="u5539_seg3"/>
+        <img id="u5539_seg4" class="img " src="images/p0______awaiting_ui__urgent_/u1574_seg4.png" alt="u5539_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u5540" class="text" style="visibility: visible;">
+          <p><span>无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u5541" class="ax_default box_1">
+        <img id="u5541_img" class="img " src="images/保存／推荐／删除／编辑/u5535.png"/>
+        <!-- Unnamed () -->
+        <div id="u5542" class="text" style="visibility: visible;">
+          <p><span>ATS端简历的渠道保护人是该员工？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5543" class="ax_default connector">
+        <img id="u5543_seg0" class="img " src="images/保存／推荐／删除／编辑/u5543_seg0.png" alt="u5543_seg0"/>
+        <img id="u5543_seg1" class="img " src="images/p0______awaiting_ui__urgent_/u1574_seg4.png" alt="u5543_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5544" class="text" style="visibility: visible;">
+          <p><span>有</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5545" class="ax_default box_1">
+        <div id="u5545_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5546" class="text" style="visibility: visible;">
+          <p><span>保护期到期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5547" class="ax_default connector">
+        <img id="u5547_seg0" class="img " src="images/保存／推荐／删除／编辑/u5547_seg0.png" alt="u5547_seg0"/>
+        <img id="u5547_seg1" class="img " src="images/p0______awaiting_ui__urgent_/u1574_seg4.png" alt="u5547_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5548" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5549" class="ax_default connector">
+        <img id="u5549_seg0" class="img " src="images/保存／推荐／删除／编辑/u5549_seg0.png" alt="u5549_seg0"/>
+        <img id="u5549_seg1" class="img " src="images/p0______awaiting_ui__urgent_/u1574_seg4.png" alt="u5549_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5550" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5551" class="ax_default box_1">
+        <div id="u5551_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5552" class="text" style="visibility: visible;">
+          <p><span>门户删除对应流程</span></p><p><span>门户删除对应简历</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5553" class="ax_default connector">
+        <img id="u5553_seg0" class="img " src="images/保存／推荐／删除／编辑/u5553_seg0.png" alt="u5553_seg0"/>
+        <img id="u5553_seg1" class="img " src="images/保存／推荐／删除／编辑/u5553_seg1.png" alt="u5553_seg1"/>
+        <img id="u5553_seg2" class="img " src="images/保存／推荐／删除／编辑/u5553_seg2.png" alt="u5553_seg2"/>
+        <img id="u5553_seg3" class="img " src="images/保存／推荐／删除／编辑/u5553_seg3.png" alt="u5553_seg3"/>
+        <img id="u5553_seg4" class="img " src="images/保存／推荐／删除／编辑/u5553_seg4.png" alt="u5553_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u5554" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
