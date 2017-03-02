@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>内推推荐冲突的处理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/内推推荐冲突的处理/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/内推推荐冲突的处理/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5647" class="ax_default box_1">
+        <div id="u5647_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5648" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span style="font-family:'.AppleSystemUIFont';color:#000000;">推荐冲突的处理</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">——伯乐之间的冲突、伯乐与其他渠道的冲突、简历归属的处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5649" class="ax_default box_1">
+        <div id="u5649_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5650" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>设计初衷</span></p><p style="font-size:13px;"><span>－不同员工可能将同一个人推荐到同样的职位</span></p><p style="font-size:13px;"><span>－而内推门户不做查重归并处理</span></p><p style="font-size:13px;"><span>－面对奖励撮合还是奖励简历贡献，业务政策是摇摆的，随时可能变化</span></p><p style="font-size:13px;"><span><br></span></p><p style="font-size:13px;"><span>因此，需要在ATS端做重复推荐的处理，并且</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5651" class="ax_default box_1">
+        <div id="u5651_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5652" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>名词缩略定义</span></p><p style="font-size:13px;"><span>－简历 受保护渠道 CVP（此处的CVP指渠道名＋人）</span></p><p style="font-size:13px;"><span>－简历 受保护渠道保护期 CVT</span></p><p style="font-size:13px;"><span>－流程 受保护渠道 PP</span></p><p style="font-size:13px;"><span>－反馈流程 受保护渠道 FPP</span></p><p style="font-size:13px;"><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5653" class="ax_default box_1">
+        <div id="u5653_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5654" class="text" style="visibility: visible;">
+          <p><span style="font-family:'.PingFang-SC-Medium', 'PingFang SC Bold', 'PingFang SC';">伯乐Jeffrey</span></p><p><span style="font-family:'.PingFang-SC-Medium', 'PingFang SC Bold', 'PingFang SC';">试图将人选Jason</span></p><p><span style="font-family:'.PingFang-SC-Medium', 'PingFang SC Bold', 'PingFang SC';">投递到职位</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';">Java</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u5655" class="ax_default box_1">
+        <img id="u5655_img" class="img " src="images/人与职位的匹配算法/u5379.png"/>
+        <!-- Unnamed () -->
+        <div id="u5656" class="text" style="visibility: visible;">
+          <p><span>ATS中有人选Jason？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5657" class="ax_default box_1">
+        <div id="u5657_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5658" class="text" style="visibility: visible;">
+          <p><span>创建流程Jason－Java</span></p><p><span>PP＝Jeffrey</span></p><p><span>FPP＝Jeffrey</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5659" class="ax_default connector">
+        <img id="u5659_seg0" class="img " src="images/p1职位详情页awt_ui/u958_seg0.png" alt="u5659_seg0"/>
+        <img id="u5659_seg1" class="img " src="images/内推推荐冲突的处理/u5659_seg1.png" alt="u5659_seg1"/>
+        <img id="u5659_seg2" class="img " src="images/内推推荐冲突的处理/u5659_seg2.png" alt="u5659_seg2"/>
+        <img id="u5659_seg3" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5659_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u5660" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5661" class="ax_default connector">
+        <img id="u5661_seg0" class="img " src="images/人与职位的匹配算法/u5413_seg0.png" alt="u5661_seg0"/>
+        <img id="u5661_seg1" class="img " src="images/p0人选信息编辑页awt_ui_ugt/u2118_seg1.png" alt="u5661_seg1"/>
+        <img id="u5661_seg2" class="img " src="images/受保护渠道逻辑汇总/u5579_seg4.png" alt="u5661_seg2"/>
+        <img id="u5661_seg3" class="img " src="images/内推推荐冲突的处理/u5661_seg3.png" alt="u5661_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u5662" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u5663" class="ax_default box_1">
+        <img id="u5663_img" class="img " src="images/人与职位的匹配算法/u5379.png"/>
+        <!-- Unnamed () -->
+        <div id="u5664" class="text" style="visibility: visible;">
+          <p><span>Jason－Java已存在？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u5665" class="ax_default box_1">
+        <img id="u5665_img" class="img " src="images/人与职位的匹配算法/u5379.png"/>
+        <!-- Unnamed () -->
+        <div id="u5666" class="text" style="visibility: visible;">
+          <p><span>CVP＝＝媒体？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5667" class="ax_default box_1">
+        <div id="u5667_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5668" class="text" style="visibility: visible;">
+          <p><span>无更多动作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5669" class="ax_default box_1">
+        <div id="u5669_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5670" class="text" style="visibility: visible;">
+          <p><span>CVP＝Jeffrey</span></p><p><span>CVT刷新</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5671" class="ax_default connector">
+        <img id="u5671_seg0" class="img " src="images/内推推荐冲突的处理/u5671_seg0.png" alt="u5671_seg0"/>
+        <img id="u5671_seg1" class="img " src="images/业务流程/u168_seg1.png" alt="u5671_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5672" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5673" class="ax_default connector">
+        <img id="u5673_seg0" class="img " src="images/内推推荐冲突的处理/u5673_seg0.png" alt="u5673_seg0"/>
+        <img id="u5673_seg1" class="img " src="images/业务流程/u188_seg5.png" alt="u5673_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5674" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5675" class="ax_default box_1">
+        <div id="u5675_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5676" class="text" style="visibility: visible;">
+          <p><span>伯乐Jeffrey</span></p><p><span>将人选Jason</span></p><p><span>扔到内推池，未关联任何职位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5677" class="ax_default connector">
+        <img id="u5677_seg0" class="img " src="images/内推推荐冲突的处理/u5677_seg0.png" alt="u5677_seg0"/>
+        <img id="u5677_seg1" class="img " src="images/业务流程/u168_seg1.png" alt="u5677_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5678" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u5679" class="ax_default">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5680" class="ax_default box_1">
+          <div id="u5680_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5681" class="text" style="visibility: visible;">
+            <p><span>招聘经理Taylor</span></p><p><span>将人选Jason</span></p><p><span>加入到职位Python</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Parallelogram) -->
+        <div id="u5682" class="ax_default box_1">
+          <img id="u5682_img" class="img " src="images/内推推荐冲突的处理/u5682.png"/>
+          <!-- Unnamed () -->
+          <div id="u5683" class="text" style="visibility: visible;">
+            <p><span>CVP＝＝Jeffrey</span></p><p><span>&amp;&amp; CVT＝＝0</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5684" class="ax_default connector">
+          <img id="u5684_seg0" class="img " src="images/内推推荐冲突的处理/u5684_seg0.png" alt="u5684_seg0"/>
+          <img id="u5684_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5684_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5685" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5686" class="ax_default box_1">
+          <div id="u5686_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5687" class="text" style="visibility: visible;">
+            <p><span>发布到门户</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5688" class="ax_default connector">
+          <img id="u5688_seg0" class="img " src="images/内推推荐冲突的处理/u5688_seg0.png" alt="u5688_seg0"/>
+          <img id="u5688_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5688_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5689" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Diamond) -->
+        <div id="u5690" class="ax_default box_1">
+          <img id="u5690_img" class="img " src="images/人与职位的匹配算法/u5379.png"/>
+          <!-- Unnamed () -->
+          <div id="u5691" class="text" style="visibility: visible;">
+            <p><span>Jason－Python已有？</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5692" class="ax_default connector">
+          <img id="u5692_seg0" class="img " src="images/内推推荐冲突的处理/u5692_seg0.png" alt="u5692_seg0"/>
+          <img id="u5692_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5692_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5693" class="text" style="visibility: visible;">
+            <p><span>否</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5694" class="ax_default box_1">
+          <div id="u5694_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5695" class="text" style="visibility: visible;">
+            <p><span>无任何动作</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5696" class="ax_default connector">
+          <img id="u5696_seg0" class="img " src="images/内推推荐冲突的处理/u5696_seg0.png" alt="u5696_seg0"/>
+          <img id="u5696_seg1" class="img " src="images/内推推荐冲突的处理/u5696_seg1.png" alt="u5696_seg1"/>
+          <img id="u5696_seg2" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5696_seg2"/>
+          <!-- Unnamed () -->
+          <div id="u5697" class="text" style="visibility: visible;">
+            <p><span>是</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5698" class="ax_default connector">
+          <img id="u5698_seg0" class="img " src="images/内推推荐冲突的处理/u5698_seg0.png" alt="u5698_seg0"/>
+          <img id="u5698_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5698_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5699" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5700" class="ax_default box_1">
+          <div id="u5700_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5701" class="text" style="visibility: visible;">
+            <p><span>在门户端创建流程Jason-Python，并指定拥有者为Jeffrey。关联两侧流程</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Diamond) -->
+        <div id="u5702" class="ax_default box_1">
+          <img id="u5702_img" class="img " src="images/内推推荐冲突的处理/u5702.png"/>
+          <!-- Unnamed () -->
+          <div id="u5703" class="text" style="visibility: visible;">
+            <p><span>Python已发布在门户？</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5704" class="ax_default box_1">
+          <div id="u5704_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5705" class="text" style="visibility: visible;">
+            <p><span>弹窗提示：&quot;Jason来自内推渠道，但Python还未发布到内推渠道，需要先发布才能加入职位。是否允许系统自动为您发布Python？&quot;</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5706" class="ax_default connector">
+          <img id="u5706_seg0" class="img " src="images/内推推荐冲突的处理/u5706_seg0.png" alt="u5706_seg0"/>
+          <img id="u5706_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5706_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5707" class="text" style="visibility: visible;">
+            <p><span>否</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5708" class="ax_default box_1">
+          <div id="u5708_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5709" class="text" style="visibility: visible;">
+            <p><span>不执行加入职位动作</span></p><p><span>toaster提示“加入职位失败，请发布后重试”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5710" class="ax_default connector">
+          <img id="u5710_seg0" class="img " src="images/内推推荐冲突的处理/u5710_seg0.png" alt="u5710_seg0"/>
+          <img id="u5710_seg1" class="img " src="images/p0_____awt_ui_ugt/u1558_seg4.png" alt="u5710_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5711" class="text" style="visibility: visible;">
+            <p><span>选择“不发布”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5712" class="ax_default connector">
+          <img id="u5712_seg0" class="img " src="images/内推推荐冲突的处理/u5712_seg0.png" alt="u5712_seg0"/>
+          <img id="u5712_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5712_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u5713" class="text" style="visibility: visible;">
+            <p><span>选择“一键发布”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u5714" class="ax_default box_1">
+          <div id="u5714_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u5715" class="text" style="visibility: visible;">
+            <p><span>ATS端生成流程Jason－Python，FPP＝Taylor</span></p><p><span>PP＝CVP（Jeffrey）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5716" class="ax_default connector">
+          <img id="u5716_seg0" class="img " src="images/内推推荐冲突的处理/u5716_seg0.png" alt="u5716_seg0"/>
+          <img id="u5716_seg1" class="img " src="images/内推推荐冲突的处理/u5716_seg1.png" alt="u5716_seg1"/>
+          <img id="u5716_seg2" class="img " src="images/内推推荐冲突的处理/u5716_seg2.png" alt="u5716_seg2"/>
+          <img id="u5716_seg3" class="img " src="images/内推推荐冲突的处理/u5716_seg3.png" alt="u5716_seg3"/>
+          <img id="u5716_seg4" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5716_seg4"/>
+          <!-- Unnamed () -->
+          <div id="u5717" class="text" style="visibility: visible;">
+            <p><span>是</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Connector) -->
+        <div id="u5718" class="ax_default connector">
+          <img id="u5718_seg0" class="img " src="images/受保护渠道逻辑汇总/u5601_seg0.png" alt="u5718_seg0"/>
+          <img id="u5718_seg1" class="img " src="images/内推推荐冲突的处理/u5718_seg1.png" alt="u5718_seg1"/>
+          <img id="u5718_seg2" class="img " src="images/内推推荐冲突的处理/u5718_seg2.png" alt="u5718_seg2"/>
+          <img id="u5718_seg3" class="img " src="images/内推推荐冲突的处理/u5718_seg3.png" alt="u5718_seg3"/>
+          <img id="u5718_seg4" class="img " src="images/受保护渠道逻辑汇总/u5579_seg4.png" alt="u5718_seg4"/>
+          <img id="u5718_seg5" class="img " src="images/内推推荐冲突的处理/u5661_seg3.png" alt="u5718_seg5"/>
+          <!-- Unnamed () -->
+          <div id="u5719" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Ellipse) -->
+      <div id="u5720" class="ax_default box_1">
+        <img id="u5720_img" class="img " src="images/内推推荐冲突的处理/u5720.png"/>
+        <!-- Unnamed () -->
+        <div id="u5721" class="text" style="visibility: visible;">
+          <p><span>反馈消息：您的朋友尚在其它渠道保护期</span><span style="color:#0000FF;">（具体文案业务来定）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5722" class="ax_default connector">
+        <img id="u5722_seg0" class="img " src="images/内推推荐冲突的处理/u5722_seg0.png" alt="u5722_seg0"/>
+        <img id="u5722_seg1" class="img " src="images/业务流程/u168_seg1.png" alt="u5722_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5723" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5724" class="ax_default connector">
+        <img id="u5724_seg0" class="img " src="images/内推推荐冲突的处理/u5724_seg0.png" alt="u5724_seg0"/>
+        <img id="u5724_seg1" class="img " src="images/业务流程/u188_seg5.png" alt="u5724_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5725" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5726" class="ax_default box_1">
+        <div id="u5726_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5727" class="text" style="visibility: visible;">
+          <p><span>创建人选Jason</span></p><p><span>CVP＝Jeffrey</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5728" class="ax_default connector">
+        <img id="u5728_seg0" class="img " src="images/内推推荐冲突的处理/u5728_seg0.png" alt="u5728_seg0"/>
+        <img id="u5728_seg1" class="img " src="images/业务流程/u168_seg1.png" alt="u5728_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5729" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u5730" class="ax_default box_1">
+        <img id="u5730_img" class="img " src="images/人与职位的匹配算法/u5379.png"/>
+        <!-- Unnamed () -->
+        <div id="u5731" class="text" style="visibility: visible;">
+          <p><span>CVT＝＝0？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5732" class="ax_default connector">
+        <img id="u5732_seg0" class="img " src="images/内推推荐冲突的处理/u5732_seg0.png" alt="u5732_seg0"/>
+        <img id="u5732_seg1" class="img " src="images/业务流程/u188_seg5.png" alt="u5732_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5733" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5734" class="ax_default connector">
+        <img id="u5734_seg0" class="img " src="images/内推推荐冲突的处理/u5734_seg0.png" alt="u5734_seg0"/>
+        <img id="u5734_seg1" class="img " src="images/内推推荐冲突的处理/u5734_seg1.png" alt="u5734_seg1"/>
+        <img id="u5734_seg2" class="img " src="images/内推推荐冲突的处理/u5734_seg2.png" alt="u5734_seg2"/>
+        <img id="u5734_seg3" class="img " src="images/我的需求/u2310_seg2.png" alt="u5734_seg3"/>
+        <img id="u5734_seg4" class="img " src="images/我的需求/u2310_seg3.png" alt="u5734_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u5735" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5736" class="ax_default connector">
+        <img id="u5736_seg0" class="img " src="images/内推推荐冲突的处理/u5736_seg0.png" alt="u5736_seg0"/>
+        <img id="u5736_seg1" class="img " src="images/内推推荐冲突的处理/u5736_seg1.png" alt="u5736_seg1"/>
+        <img id="u5736_seg2" class="img " src="images/内推推荐冲突的处理/u5736_seg2.png" alt="u5736_seg2"/>
+        <img id="u5736_seg3" class="img " src="images/内推推荐冲突的处理/u5736_seg3.png" alt="u5736_seg3"/>
+        <img id="u5736_seg4" class="img " src="images/内推推荐冲突的处理/u5736_seg4.png" alt="u5736_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u5737" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5738" class="ax_default box_1">
+        <div id="u5738_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5739" class="text" style="visibility: visible;">
+          <p><span>创建子流程</span></p><p><span>FPP＝Jeffrey</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5740" class="ax_default connector">
+        <img id="u5740_seg0" class="img " src="images/内推推荐冲突的处理/u5740_seg0.png" alt="u5740_seg0"/>
+        <img id="u5740_seg1" class="img " src="images/p0_____awt_ui_ugt/u1558_seg4.png" alt="u5740_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5741" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5742" class="ax_default box_1">
+        <div id="u5742_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5743" class="text" style="visibility: visible;">
+          <p><span>创建流程Jason－Java</span></p><p><span>PP＝CVP</span></p><p><span>FPP＝Jeffrey</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5744" class="ax_default connector">
+        <img id="u5744_seg0" class="img " src="images/内推推荐冲突的处理/u5744_seg0.png" alt="u5744_seg0"/>
+        <img id="u5744_seg1" class="img " src="images/内推推荐冲突的处理/u5744_seg1.png" alt="u5744_seg1"/>
+        <img id="u5744_seg2" class="img " src="images/p0_____awt_ui_ugt/u1558_seg4.png" alt="u5744_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u5745" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Ellipse) -->
+      <div id="u5746" class="ax_default box_1">
+        <img id="u5746_img" class="img " src="images/内推推荐冲突的处理/u5720.png"/>
+        <!-- Unnamed () -->
+        <div id="u5747" class="text" style="visibility: visible;">
+          <p><span>反馈消息：您的朋友已被推荐到该职位，不必重复推荐</span><span style="color:#0000FF;">（具体文案业务来定）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5748" class="ax_default connector">
+        <img id="u5748_seg0" class="img " src="images/内推推荐冲突的处理/u5748_seg0.png" alt="u5748_seg0"/>
+        <img id="u5748_seg1" class="img " src="images/p0_____awt_ui_ugt/u1558_seg4.png" alt="u5748_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5749" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Ellipse) -->
+      <div id="u5750" class="ax_default box_1">
+        <img id="u5750_img" class="img " src="images/内推推荐冲突的处理/u5720.png"/>
+        <!-- Unnamed () -->
+        <div id="u5751" class="text" style="visibility: visible;">
+          <p><span>（具体文案根据业务来定，看是否奖励行为推荐）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5752" class="ax_default connector">
+        <img id="u5752_seg0" class="img " src="images/内推推荐冲突的处理/u5748_seg0.png" alt="u5752_seg0"/>
+        <img id="u5752_seg1" class="img " src="images/p0_____awt_ui_ugt/u1558_seg4.png" alt="u5752_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5753" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5754" class="ax_default connector">
+        <img id="u5754_seg0" class="img " src="images/内推推荐冲突的处理/u5754_seg0.png" alt="u5754_seg0"/>
+        <img id="u5754_seg1" class="img " src="images/业务流程/u168_seg1.png" alt="u5754_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5755" class="text" style="visibility: visible;">
+          <p><span>简历</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u5756" class="ax_default connector">
+        <img id="u5756_seg0" class="img " src="images/内推推荐冲突的处理/u5756_seg0.png" alt="u5756_seg0"/>
+        <img id="u5756_seg1" class="img " src="images/职位列表（首页）awt_ui/u676_seg1.png" alt="u5756_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u5757" class="text" style="visibility: visible;">
+          <p><span>流程</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
