@@ -1,0 +1,1389 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>消息体系</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/消息体系/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/消息体系/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6066" class="ax_default box_1">
+        <div id="u6066_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6067" class="text">
+          <p style="font-size:24px;"><span>消息体系及自动处理</span></p><p style="font-size:16px;"><span>——招聘系统中所有的消息的触发、结束及其自动处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6068" class="ax_default box_1">
+        <div id="u6068_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6069" class="text">
+          <p style="font-size:24px;"><span>设计原则</span></p><p style="font-size:13px;"><span>- 多次通知，确保信息触达</span></p><p style="font-size:13px;"><span>- 有始有终，消除僵尸流程</span></p><p style="font-size:13px;"><span>- 消除低效无关联提醒，避免被用户视为垃圾信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6070" class="ax_default box_1">
+        <div id="u6070_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6071" class="text">
+          <p style="font-size:24px;"><span>业务逻辑</span></p><p style="font-size:13px;"><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6072" class="ax_default box_1">
+        <div id="u6072_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6073" class="text">
+          <p style="font-size:24px;"><span>设计初衷</span></p><p style="font-size:13px;"><span>- 在不同角色之间，减少信息壁垒，信息透明（如招聘与伯乐）</span></p><p style="font-size:13px;"><span>- 通过自动消息提醒，衔接各任务页面，提高日常事务处理效率</span></p><p style="font-size:13px;"><span>- 消除僵尸流程</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6074" class="ax_default box_1">
+        <div id="u6074_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6075" class="text">
+          <p style="font-size:24px;"><span>消息类型定义</span></p><p style="font-size:13px;"><span>－通知：仅做信息传达，不需要用户做后续跟进操作</span></p><p style="font-size:13px;"><span>&nbsp;- 警告：起警告作用，需用户引起重视</span></p><p style="font-size:13px;"><span>&nbsp;- 代办：信息传达的同时，引导用户完成后续操作，一般会启动自动处理timer做定期提醒</span></p><p style="font-size:13px;"><span>&nbsp;- 提示：操作后的即时信息反馈，当前页告知操作状态</span></p><p style="font-size:13px;"><span>&nbsp;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6076" class="ax_default box_1">
+        <div id="u6076_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6077" class="text">
+          <p style="font-size:24px;"><span>消息体系应用原则</span></p><p style="font-size:13px;"><span>－对于没有后续操作衔接的功能，完成操作后，必须有“提示”消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6078" class="ax_default box_1">
+        <div id="u6078_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6079" class="text">
+          <p><span>触发事件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6080" class="ax_default box_1">
+        <div id="u6080_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6081" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6082" class="ax_default connector">
+        <img id="u6082_seg0" class="img " src="images/消息体系/u6082_seg0.png" alt="u6082_seg0"/>
+        <img id="u6082_seg1" class="img " src="images/消息体系/u6082_seg1.png" alt="u6082_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u6083" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6084" class="ax_default box_1">
+        <div id="u6084_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6085" class="text">
+          <p><span>执行时间点</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6086" class="ax_default box_1">
+        <div id="u6086_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6087" class="text">
+          <p><span>当即</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6088" class="ax_default box_1">
+        <div id="u6088_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6089" class="text">
+          <p><span>时间点1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6090" class="ax_default box_1">
+        <div id="u6090_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6091" class="text">
+          <p><span>时间点2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6092" class="ax_default box_1">
+        <div id="u6092_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6093" class="text">
+          <p><span>......</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6094" class="ax_default box_1">
+        <div id="u6094_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6095" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6096" class="ax_default box_1">
+        <div id="u6096_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6097" class="text">
+          <p><span>动作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6098" class="ax_default box_1">
+        <div id="u6098_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6099" class="text">
+          <p><span>消息触达</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6100" class="ax_default box_1">
+        <div id="u6100_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6101" class="text">
+          <p><span>自动处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6102" class="ax_default connector">
+        <img id="u6102_seg0" class="img " src="images/消息体系/u6102_seg0.png" alt="u6102_seg0"/>
+        <img id="u6102_seg1" class="img " src="images/消息体系/u6102_seg1.png" alt="u6102_seg1"/>
+        <img id="u6102_seg2" class="img " src="images/消息体系/u6102_seg2.png" alt="u6102_seg2"/>
+        <img id="u6102_seg3" class="img " src="images/消息体系/u6102_seg3.png" alt="u6102_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u6103" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6104" class="ax_default connector">
+        <img id="u6104_seg0" class="img " src="images/消息体系/u6102_seg0.png" alt="u6104_seg0"/>
+        <img id="u6104_seg1" class="img " src="images/消息体系/u6104_seg1.png" alt="u6104_seg1"/>
+        <img id="u6104_seg2" class="img " src="images/消息体系/u6102_seg2.png" alt="u6104_seg2"/>
+        <img id="u6104_seg3" class="img " src="images/消息体系/u6102_seg3.png" alt="u6104_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u6105" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6106" class="ax_default connector">
+        <img id="u6106_seg0" class="img " src="images/消息体系/u6102_seg0.png" alt="u6106_seg0"/>
+        <img id="u6106_seg1" class="img " src="images/消息体系/u6106_seg1.png" alt="u6106_seg1"/>
+        <img id="u6106_seg2" class="img " src="images/消息体系/u6102_seg2.png" alt="u6106_seg2"/>
+        <img id="u6106_seg3" class="img " src="images/消息体系/u6102_seg3.png" alt="u6106_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u6107" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6108" class="ax_default connector">
+        <img id="u6108_seg0" class="img " src="images/消息体系/u6102_seg0.png" alt="u6108_seg0"/>
+        <img id="u6108_seg1" class="img " src="images/消息体系/u6108_seg1.png" alt="u6108_seg1"/>
+        <img id="u6108_seg2" class="img " src="images/消息体系/u6102_seg2.png" alt="u6108_seg2"/>
+        <img id="u6108_seg3" class="img " src="images/消息体系/u6102_seg3.png" alt="u6108_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u6109" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6110" class="ax_default box_1">
+        <div id="u6110_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6111" class="text">
+          <p><span>用户完成</span></p><p><span>提示动作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6112" class="ax_default connector">
+        <img id="u6112_seg0" class="img " src="images/消息体系/u6112_seg0.png" alt="u6112_seg0"/>
+        <img id="u6112_seg1" class="img " src="images/消息体系/u6102_seg3.png" alt="u6112_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u6113" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6114" class="ax_default connector">
+        <img id="u6114_seg0" class="img " src="images/消息体系/u6114_seg0.png" alt="u6114_seg0"/>
+        <img id="u6114_seg1" class="img " src="images/消息体系/u6114_seg1.png" alt="u6114_seg1"/>
+        <img id="u6114_seg2" class="img " src="images/消息体系/u6114_seg2.png" alt="u6114_seg2"/>
+        <img id="u6114_seg3" class="img " src="images/消息体系/u6114_seg3.png" alt="u6114_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u6115" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u6116" class="ax_default connector">
+        <img id="u6116_seg0" class="img " src="images/消息体系/u6116_seg0.png" alt="u6116_seg0"/>
+        <img id="u6116_seg1" class="img " src="images/消息体系/u6116_seg1.png" alt="u6116_seg1"/>
+        <img id="u6116_seg2" class="img " src="images/消息体系/u6116_seg2.png" alt="u6116_seg2"/>
+        <img id="u6116_seg3" class="img " src="images/消息体系/u6114_seg2.png" alt="u6116_seg3"/>
+        <img id="u6116_seg4" class="img " src="images/消息体系/u6114_seg3.png" alt="u6116_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u6117" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6118" class="ax_default label">
+        <div id="u6118_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6119" class="text">
+          <p><span>一旦完成</span></p><p><span>关闭时间序列</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6120" class="ax_default box_1">
+        <div id="u6120_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6121" class="text">
+          <p><span>消息模板</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6122" class="ax_default nofillborder">
+        <div id="u6122_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6123" class="text">
+          <p><span>-内推门户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u6124" class="ax_default">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6125" class="ax_default table_cell">
+          <img id="u6125_img" class="img " src="images/消息体系/u6125.png"/>
+          <!-- Unnamed () -->
+          <div id="u6126" class="text">
+            <p><span>序号</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6127" class="ax_default table_cell">
+          <img id="u6127_img" class="img " src="images/消息体系/u6127.png"/>
+          <!-- Unnamed () -->
+          <div id="u6128" class="text">
+            <p><span>触发事件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6129" class="ax_default table_cell">
+          <img id="u6129_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6130" class="text">
+            <p><span>结束事件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6131" class="ax_default table_cell">
+          <img id="u6131_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6132" class="text">
+            <p><span>触发时间</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6133" class="ax_default table_cell">
+          <img id="u6133_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6134" class="text">
+            <p><span>消息类型</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6135" class="ax_default table_cell">
+          <img id="u6135_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6136" class="text">
+            <p><span>触达渠道</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6137" class="ax_default table_cell">
+          <img id="u6137_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6138" class="text">
+            <p><span>动作</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6139" class="ax_default table_cell">
+          <img id="u6139_img" class="img " src="images/消息体系/u6139.png"/>
+          <!-- Unnamed () -->
+          <div id="u6140" class="text">
+            <p><span>内容</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6141" class="ax_default table_cell">
+          <img id="u6141_img" class="img " src="images/消息体系/u6141.png"/>
+          <!-- Unnamed () -->
+          <div id="u6142" class="text">
+            <p><span>跳转页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6143" class="ax_default table_cell">
+          <img id="u6143_img" class="img " src="images/消息体系/u6143.png"/>
+          <!-- Unnamed () -->
+          <div id="u6144" class="text">
+            <p><span>1</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6145" class="ax_default table_cell">
+          <img id="u6145_img" class="img " src="images/消息体系/u6145.png"/>
+          <!-- Unnamed () -->
+          <div id="u6146" class="text">
+            <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">对于没有后续操作衔接的功能，完成操作后</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';">e.g.1员工在简历编辑页上传附件并点击“解析”后</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6147" class="ax_default table_cell">
+          <img id="u6147_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6148" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6149" class="ax_default table_cell">
+          <img id="u6149_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6150" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6151" class="ax_default table_cell">
+          <img id="u6151_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6152" class="text">
+            <p><span>提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6153" class="ax_default table_cell">
+          <img id="u6153_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6154" class="text">
+            <p><span>站内（toaster）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6155" class="ax_default table_cell">
+          <img id="u6155_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6156" class="text">
+            <p><span>给右上角toaster提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6157" class="ax_default table_cell">
+          <img id="u6157_img" class="img " src="images/消息体系/u6157.png"/>
+          <!-- Unnamed () -->
+          <div id="u6158" class="text">
+            <p><span>&lt;功能名称&gt;&lt;成功/失败&gt;</span></p><p><span><br></span></p><p><span>e.g.1 “解析成功”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6159" class="ax_default table_cell">
+          <img id="u6159_img" class="img " src="images/消息体系/u6159.png"/>
+          <!-- Unnamed () -->
+          <div id="u6160" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6161" class="ax_default table_cell">
+          <img id="u6161_img" class="img " src="images/消息体系/u6143.png"/>
+          <!-- Unnamed () -->
+          <div id="u6162" class="text">
+            <p><span>2</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6163" class="ax_default table_cell">
+          <img id="u6163_img" class="img " src="images/消息体系/u6145.png"/>
+          <!-- Unnamed () -->
+          <div id="u6164" class="text">
+            <p><span>员工在内推门户新创建简历，并操作简历“推荐”后（未推荐职位）</span></p><p><span>（若简历重复，且CVT！=0，且当前CVP！=媒体）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6165" class="ax_default table_cell">
+          <img id="u6165_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6166" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6167" class="ax_default table_cell">
+          <img id="u6167_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6168" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6169" class="ax_default table_cell">
+          <img id="u6169_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6170" class="text">
+            <p><span>警告</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6171" class="ax_default table_cell">
+          <img id="u6171_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6172" class="text">
+            <p><span>站内（弹窗）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6173" class="ax_default table_cell">
+          <img id="u6173_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6174" class="text">
+            <p><span>当前页给弹窗警告</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6175" class="ax_default table_cell">
+          <img id="u6175_img" class="img " src="images/消息体系/u6157.png"/>
+          <!-- Unnamed () -->
+          <div id="u6176" class="text">
+            <p><span>&lt;人选姓名&gt;已经在人才库中存在，本次推荐可能无效，谢谢您的理解与支持！</span></p><p><span>（具体文案待业务提供）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6177" class="ax_default table_cell">
+          <img id="u6177_img" class="img " src="images/消息体系/u6159.png"/>
+          <!-- Unnamed () -->
+          <div id="u6178" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6179" class="ax_default table_cell">
+          <img id="u6179_img" class="img " src="images/消息体系/u6179.png"/>
+          <!-- Unnamed () -->
+          <div id="u6180" class="text">
+            <p><span>3</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6181" class="ax_default table_cell">
+          <img id="u6181_img" class="img " src="images/消息体系/u6181.png"/>
+          <!-- Unnamed () -->
+          <div id="u6182" class="text">
+            <p><span>员工在内推门户操作简历“推荐”后（未推荐职位）</span></p><p><span>（若简历不重复）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6183" class="ax_default table_cell">
+          <img id="u6183_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6184" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6185" class="ax_default table_cell">
+          <img id="u6185_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6186" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6187" class="ax_default table_cell">
+          <img id="u6187_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6188" class="text">
+            <p><span>提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6189" class="ax_default table_cell">
+          <img id="u6189_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6190" class="text">
+            <p><span>站内（toaster）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6191" class="ax_default table_cell">
+          <img id="u6191_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6192" class="text">
+            <p><span>给右上角toaster提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6193" class="ax_default table_cell">
+          <img id="u6193_img" class="img " src="images/消息体系/u6193.png"/>
+          <!-- Unnamed () -->
+          <div id="u6194" class="text">
+            <p><span>&lt;人选姓名&gt;推荐成功</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6195" class="ax_default table_cell">
+          <img id="u6195_img" class="img " src="images/消息体系/u6195.png"/>
+          <!-- Unnamed () -->
+          <div id="u6196" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6197" class="ax_default table_cell">
+          <img id="u6197_img" class="img " src="images/消息体系/u6179.png"/>
+          <!-- Unnamed () -->
+          <div id="u6198" class="text">
+            <p><span>4</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6199" class="ax_default table_cell">
+          <img id="u6199_img" class="img " src="images/消息体系/u6181.png"/>
+          <!-- Unnamed () -->
+          <div id="u6200" class="text">
+            <p><span>员工在内推门户操作简历“推荐”后</span></p><p><span>（若流程重复）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6201" class="ax_default table_cell">
+          <img id="u6201_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6202" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6203" class="ax_default table_cell">
+          <img id="u6203_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6204" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6205" class="ax_default table_cell">
+          <img id="u6205_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6206" class="text">
+            <p><span>提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6207" class="ax_default table_cell">
+          <img id="u6207_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6208" class="text">
+            <p><span>站内（toaster）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6209" class="ax_default table_cell">
+          <img id="u6209_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6210" class="text">
+            <p><span>给右上角toaster提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6211" class="ax_default table_cell">
+          <img id="u6211_img" class="img " src="images/消息体系/u6193.png"/>
+          <!-- Unnamed () -->
+          <div id="u6212" class="text">
+            <p><span>&lt;人选姓名&gt;已经被推荐至&lt;职位名称&gt;，无需重复推荐</span></p><p><span>（具体文案待业务提供）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6213" class="ax_default table_cell">
+          <img id="u6213_img" class="img " src="images/消息体系/u6195.png"/>
+          <!-- Unnamed () -->
+          <div id="u6214" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6215" class="ax_default table_cell">
+          <img id="u6215_img" class="img " src="images/消息体系/u6179.png"/>
+          <!-- Unnamed () -->
+          <div id="u6216" class="text">
+            <p><span>5</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6217" class="ax_default table_cell">
+          <img id="u6217_img" class="img " src="images/消息体系/u6181.png"/>
+          <!-- Unnamed () -->
+          <div id="u6218" class="text">
+            <p><span>员工在内推门户操作简历“推荐”后</span></p><p><span>（若流程不重复）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6219" class="ax_default table_cell">
+          <img id="u6219_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6220" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6221" class="ax_default table_cell">
+          <img id="u6221_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6222" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6223" class="ax_default table_cell">
+          <img id="u6223_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6224" class="text">
+            <p><span>提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6225" class="ax_default table_cell">
+          <img id="u6225_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6226" class="text">
+            <p><span>站内（toaster）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6227" class="ax_default table_cell">
+          <img id="u6227_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6228" class="text">
+            <p><span>给右上角toaster提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6229" class="ax_default table_cell">
+          <img id="u6229_img" class="img " src="images/消息体系/u6193.png"/>
+          <!-- Unnamed () -->
+          <div id="u6230" class="text">
+            <p><span>&lt;人选姓名&gt;已经成功推荐至&lt;职位名称&gt;</span></p><p><span>（具体文案待业务提供）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6231" class="ax_default table_cell">
+          <img id="u6231_img" class="img " src="images/消息体系/u6195.png"/>
+          <!-- Unnamed () -->
+          <div id="u6232" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6233" class="ax_default table_cell">
+          <img id="u6233_img" class="img " src="images/消息体系/u6233.png"/>
+          <!-- Unnamed () -->
+          <div id="u6234" class="text">
+            <p><span>6</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6235" class="ax_default table_cell">
+          <img id="u6235_img" class="img " src="images/消息体系/u6235.png"/>
+          <!-- Unnamed () -->
+          <div id="u6236" class="text">
+            <p><span>员工在内推门户操作“催反馈”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6237" class="ax_default table_cell">
+          <img id="u6237_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6238" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6239" class="ax_default table_cell">
+          <img id="u6239_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6240" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6241" class="ax_default table_cell">
+          <img id="u6241_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6242" class="text">
+            <p><span>通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6243" class="ax_default table_cell">
+          <img id="u6243_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6244" class="text">
+            <p><span>大象</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6245" class="ax_default table_cell">
+          <img id="u6245_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6246" class="text">
+            <p><span>给对应流程上的招聘负责人发送“代办”消息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6247" class="ax_default table_cell">
+          <img id="u6247_img" class="img " src="images/消息体系/u6247.png"/>
+          <!-- Unnamed () -->
+          <div id="u6248" class="text">
+            <p><span>大象内容：&lt;伯乐姓名&gt;想知道&lt;候选人&gt;的内推进度，&lt;点击处理(超链接)&gt;</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6249" class="ax_default table_cell">
+          <img id="u6249_img" class="img " src="images/消息体系/u6249.png"/>
+          <!-- Unnamed () -->
+          <div id="u6250" class="text">
+            <p><span>人选简历详情页</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6251" class="ax_default box_1">
+        <div id="u6251_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6252" class="text">
+          <p style="font-size:24px;"><span>消息渠道</span></p><p style="font-size:13px;"><span>&nbsp;- 高优先级：邮件、大象、站内（toaster）、站内（弹窗）</span></p><p style="font-size:13px;"><span>&nbsp;- 低优先级：微信、短信、站内（消息中心）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6253" class="ax_default nofillborder">
+        <div id="u6253_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u6254" class="text">
+          <p><span>- ATS</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u6255" class="ax_default">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6256" class="ax_default table_cell">
+          <img id="u6256_img" class="img " src="images/消息体系/u6125.png"/>
+          <!-- Unnamed () -->
+          <div id="u6257" class="text">
+            <p><span>序号</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6258" class="ax_default table_cell">
+          <img id="u6258_img" class="img " src="images/消息体系/u6127.png"/>
+          <!-- Unnamed () -->
+          <div id="u6259" class="text">
+            <p><span>触发事件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6260" class="ax_default table_cell">
+          <img id="u6260_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6261" class="text">
+            <p><span>结束事件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6262" class="ax_default table_cell">
+          <img id="u6262_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6263" class="text">
+            <p><span>触发时间</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6264" class="ax_default table_cell">
+          <img id="u6264_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6265" class="text">
+            <p><span>消息类型</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6266" class="ax_default table_cell">
+          <img id="u6266_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6267" class="text">
+            <p><span>触达渠道</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6268" class="ax_default table_cell">
+          <img id="u6268_img" class="img " src="images/消息体系/u6129.png"/>
+          <!-- Unnamed () -->
+          <div id="u6269" class="text">
+            <p><span>动作</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6270" class="ax_default table_cell">
+          <img id="u6270_img" class="img " src="images/消息体系/u6139.png"/>
+          <!-- Unnamed () -->
+          <div id="u6271" class="text">
+            <p><span>内容</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6272" class="ax_default table_cell">
+          <img id="u6272_img" class="img " src="images/消息体系/u6141.png"/>
+          <!-- Unnamed () -->
+          <div id="u6273" class="text">
+            <p><span>跳转页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6274" class="ax_default table_cell">
+          <img id="u6274_img" class="img " src="images/消息体系/u6143.png"/>
+          <!-- Unnamed () -->
+          <div id="u6275" class="text">
+            <p><span>1</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6276" class="ax_default table_cell">
+          <img id="u6276_img" class="img " src="images/消息体系/u6145.png"/>
+          <!-- Unnamed () -->
+          <div id="u6277" class="text">
+            <p><span>招聘负责人将内推人选加入某个职位</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6278" class="ax_default table_cell">
+          <img id="u6278_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6279" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6280" class="ax_default table_cell">
+          <img id="u6280_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6281" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6282" class="ax_default table_cell">
+          <img id="u6282_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6283" class="text">
+            <p><span>通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6284" class="ax_default table_cell">
+          <img id="u6284_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6285" class="text">
+            <p><span>大象</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6286" class="ax_default table_cell">
+          <img id="u6286_img" class="img " src="images/消息体系/u6147.png"/>
+          <!-- Unnamed () -->
+          <div id="u6287" class="text">
+            <p><span>给当前CVP发送“通知”消息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6288" class="ax_default table_cell">
+          <img id="u6288_img" class="img " src="images/消息体系/u6157.png"/>
+          <!-- Unnamed () -->
+          <div id="u6289" class="text">
+            <p><span>您推荐的候选人&lt;候选人姓名&gt;，已经被招聘关注并加入职位&lt;职位名称&gt;，您可以在内推门户中&lt;查看流程进度：超链接&gt;，后续有进度更新我们会及时通知您，感谢您的推荐！</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6290" class="ax_default table_cell">
+          <img id="u6290_img" class="img " src="images/消息体系/u6159.png"/>
+          <!-- Unnamed () -->
+          <div id="u6291" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6292" class="ax_default table_cell">
+          <img id="u6292_img" class="img " src="images/消息体系/u6292.png"/>
+          <!-- Unnamed () -->
+          <div id="u6293" class="text">
+            <p><span>2</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6294" class="ax_default table_cell">
+          <img id="u6294_img" class="img " src="images/消息体系/u6294.png"/>
+          <!-- Unnamed () -->
+          <div id="u6295" class="text">
+            <p><span>招聘负责人将内推人选操作“进入面试”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6296" class="ax_default table_cell">
+          <img id="u6296_img" class="img " src="images/消息体系/u6296.png"/>
+          <!-- Unnamed () -->
+          <div id="u6297" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6298" class="ax_default table_cell">
+          <img id="u6298_img" class="img " src="images/消息体系/u6296.png"/>
+          <!-- Unnamed () -->
+          <div id="u6299" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6300" class="ax_default table_cell">
+          <img id="u6300_img" class="img " src="images/消息体系/u6296.png"/>
+          <!-- Unnamed () -->
+          <div id="u6301" class="text">
+            <p><span>通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6302" class="ax_default table_cell">
+          <img id="u6302_img" class="img " src="images/消息体系/u6296.png"/>
+          <!-- Unnamed () -->
+          <div id="u6303" class="text">
+            <p><span>大象</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6304" class="ax_default table_cell">
+          <img id="u6304_img" class="img " src="images/消息体系/u6296.png"/>
+          <!-- Unnamed () -->
+          <div id="u6305" class="text">
+            <p><span>给当前CVP发送“通知”消息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6306" class="ax_default table_cell">
+          <img id="u6306_img" class="img " src="images/消息体系/u6306.png"/>
+          <!-- Unnamed () -->
+          <div id="u6307" class="text">
+            <p><span>您推荐的候选人&lt;候选人姓名&gt;，已经进入面试环节，您可以在内推门户中&lt;查看流程进度：超链接&gt;，后续有进度更新我们会及时通知您，感谢您的推荐！</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6308" class="ax_default table_cell">
+          <img id="u6308_img" class="img " src="images/消息体系/u6308.png"/>
+          <!-- Unnamed () -->
+          <div id="u6309" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6310" class="ax_default table_cell">
+          <img id="u6310_img" class="img " src="images/消息体系/u6179.png"/>
+          <!-- Unnamed () -->
+          <div id="u6311" class="text">
+            <p><span>3</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6312" class="ax_default table_cell">
+          <img id="u6312_img" class="img " src="images/消息体系/u6181.png"/>
+          <!-- Unnamed () -->
+          <div id="u6313" class="text">
+            <p><span>招聘负责人将内推人选操作“通过终面”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6314" class="ax_default table_cell">
+          <img id="u6314_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6315" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6316" class="ax_default table_cell">
+          <img id="u6316_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6317" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6318" class="ax_default table_cell">
+          <img id="u6318_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6319" class="text">
+            <p><span>通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6320" class="ax_default table_cell">
+          <img id="u6320_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6321" class="text">
+            <p><span>大象</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6322" class="ax_default table_cell">
+          <img id="u6322_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6323" class="text">
+            <p><span>给当前CVP发送“通知”消息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6324" class="ax_default table_cell">
+          <img id="u6324_img" class="img " src="images/消息体系/u6193.png"/>
+          <!-- Unnamed () -->
+          <div id="u6325" class="text">
+            <p><span>您推荐的候选人&lt;候选人姓名&gt;，已经进入通过终面，进入Offer环节，您可以在内推门户中&lt;查看流程进度：超链接&gt;，后续有进度更新我们会及时通知您，感谢您的推荐！</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6326" class="ax_default table_cell">
+          <img id="u6326_img" class="img " src="images/消息体系/u6195.png"/>
+          <!-- Unnamed () -->
+          <div id="u6327" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6328" class="ax_default table_cell">
+          <img id="u6328_img" class="img " src="images/消息体系/u6179.png"/>
+          <!-- Unnamed () -->
+          <div id="u6329" class="text">
+            <p><span>4</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6330" class="ax_default table_cell">
+          <img id="u6330_img" class="img " src="images/消息体系/u6181.png"/>
+          <!-- Unnamed () -->
+          <div id="u6331" class="text">
+            <p><span>候选人入职（待定）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6332" class="ax_default table_cell">
+          <img id="u6332_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6333" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6334" class="ax_default table_cell">
+          <img id="u6334_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6335" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6336" class="ax_default table_cell">
+          <img id="u6336_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6337" class="text">
+            <p><span>通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6338" class="ax_default table_cell">
+          <img id="u6338_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6339" class="text">
+            <p><span>大象、邮件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6340" class="ax_default table_cell">
+          <img id="u6340_img" class="img " src="images/消息体系/u6183.png"/>
+          <!-- Unnamed () -->
+          <div id="u6341" class="text">
+            <p><span>给当前CVP发送“通知”消息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6342" class="ax_default table_cell">
+          <img id="u6342_img" class="img " src="images/消息体系/u6193.png"/>
+          <!-- Unnamed () -->
+          <div id="u6343" class="text">
+            <p><span>待定</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6344" class="ax_default table_cell">
+          <img id="u6344_img" class="img " src="images/消息体系/u6195.png"/>
+          <!-- Unnamed () -->
+          <div id="u6345" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6346" class="ax_default table_cell">
+          <img id="u6346_img" class="img " src="images/消息体系/u6233.png"/>
+          <!-- Unnamed () -->
+          <div id="u6347" class="text">
+            <p><span>5</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6348" class="ax_default table_cell">
+          <img id="u6348_img" class="img " src="images/消息体系/u6235.png"/>
+          <!-- Unnamed () -->
+          <div id="u6349" class="text">
+            <p><span>招聘负责人将内推人选操作“放弃”</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6350" class="ax_default table_cell">
+          <img id="u6350_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6351" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6352" class="ax_default table_cell">
+          <img id="u6352_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6353" class="text">
+            <p><span>当即</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6354" class="ax_default table_cell">
+          <img id="u6354_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6355" class="text">
+            <p><span>通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6356" class="ax_default table_cell">
+          <img id="u6356_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6357" class="text">
+            <p><span>大象</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6358" class="ax_default table_cell">
+          <img id="u6358_img" class="img " src="images/消息体系/u6237.png"/>
+          <!-- Unnamed () -->
+          <div id="u6359" class="text">
+            <p><span>给当前CVP发送“通知”消息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6360" class="ax_default table_cell">
+          <img id="u6360_img" class="img " src="images/消息体系/u6247.png"/>
+          <!-- Unnamed () -->
+          <div id="u6361" class="text">
+            <p><span>您推荐的候选人&lt;候选人姓名&gt;未能通过&lt;主流程&gt;环节，流程已终止，感谢您的推荐！请继续努力，多多推荐其他人选，&lt;继续推荐：超链接&gt;</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6362" class="ax_default table_cell">
+          <img id="u6362_img" class="img " src="images/消息体系/u6249.png"/>
+          <!-- Unnamed () -->
+          <div id="u6363" class="text">
+            <p><span>无</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
