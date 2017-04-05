@@ -1,0 +1,41 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:static;
+  left:auto;
+  width:582px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u16871 {
+  position:absolute;
+  left:63px;
+  top:111px;
+  width:519px;
+  height:707px;
+  overflow:hidden;
+}
+#u16871_state0 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:519px;
+  height:707px;
+  -ms-overflow-x:hidden;
+  overflow-x:hidden;
+  -ms-overflow-y:hidden;
+  overflow-y:hidden;
+  background-image:none;
+}
+#u16871_state0_content {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1px;
+  height:1px;
+}
