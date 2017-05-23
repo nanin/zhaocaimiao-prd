@@ -1,11 +1,13 @@
 ﻿.ax_default {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:13px;
   color:#333333;
   text-align:center;
   line-height:normal;
+}
+.blackbg {
 }
 .gradule {
 }
@@ -27,28 +29,28 @@
 ._图片 {
 }
 .heading_1 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 .heading_2 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 .heading_3 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:18px;
   text-align:left;
 }
 .heading_4 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:14px;
@@ -58,20 +60,20 @@
   text-align:left;
 }
 .heading_5 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:bold;
   font-style:normal;
   text-align:left;
 }
 .heading_6 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:10px;
   text-align:left;
 }
 ._形状 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:normal;
   font-style:normal;
 }
@@ -176,7 +178,7 @@
   color:#000000;
 }
 ._btn-default {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -190,7 +192,7 @@
   line-height:20px;
 }
 ._btn-primary {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -204,7 +206,7 @@
   line-height:20px;
 }
 ._btn-success {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -218,7 +220,7 @@
   line-height:20px;
 }
 ._btn-link {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -232,21 +234,21 @@
   line-height:20px;
 }
 .label1 {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:14px;
   line-height:20px;
 }
 .form_text_field {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   line-height:20px;
 }
 .dropdown-menu {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -260,7 +262,7 @@
   line-height:20px;
 }
 ._nav-tab_background_tabs {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -275,7 +277,7 @@
   color:#FFFFFF;
 }
 ._nav-pills_background_pills {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -287,14 +289,14 @@
   color:#2A6496;
 }
 ._navbar-default__content_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   color:#555555;
   line-height:20px;
 }
 ._navbar-default__background_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:18px;
@@ -305,7 +307,7 @@
   color:#2A6496;
 }
 ._navbar-inverse__background_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:18px;
@@ -321,7 +323,7 @@
   color:#FFFFFF;
 }
 ._breadcrumb_background {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -329,7 +331,7 @@
   line-height:20px;
 }
 ._pagination {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -337,7 +339,7 @@
   line-height:26px;
 }
 ._pager_btn {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -345,7 +347,7 @@
   line-height:20px;
 }
 ._alert-info {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -353,7 +355,7 @@
   line-height:20px;
 }
 ._alert-warning {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -361,14 +363,14 @@
   line-height:20px;
 }
 ._btn-grp__btn-default__ends_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:#333333;
 }
 ._btn-grp__btn-default__center_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -379,7 +381,7 @@
 ._btn-grp_divider {
 }
 ._dropdown_menuitem {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
 }
@@ -387,7 +389,7 @@
   color:#252525;
 }
 ._dropdown-menu__dropdown-header {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -395,7 +397,7 @@
   line-height:17px;
 }
 ._panel__panel-default__content_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -403,7 +405,7 @@
   line-height:20px;
 }
 ._panel__panel-default__no_title_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -411,7 +413,7 @@
   line-height:20px;
 }
 ._panel__panel-default__header_ {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -419,14 +421,14 @@
   line-height:20px;
 }
 ._modal-dialogue_header {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:18px;
   line-height:25px;
 }
 ._modal-dialogue_content {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -440,7 +442,7 @@
 .tooltip_arrow {
 }
 .badge {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:12px;
@@ -451,14 +453,14 @@
   color:#428BCA;
 }
 ._well {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   line-height:20px;
 }
 ._well__well-lg {
-  font-family:'Arial Normal', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -470,14 +472,14 @@
   line-height:20px;
 }
 ._一级标题 {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:36px;
   text-align:left;
 }
 ._二级标题 {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:30px;
