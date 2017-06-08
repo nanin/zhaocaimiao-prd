@@ -11,10 +11,37 @@
     <link href="files/简历锁定逻辑/styles.css" type="text/css" rel="stylesheet"/>
     <script src="resources/scripts/jquery-1.7.1.min.js"></script>
     <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
-    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
     <script src="data/document.js"></script>
-    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
     <script src="files/简历锁定逻辑/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
@@ -25,591 +52,333 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21727" class="ax_default box_1">
         <div id="u21727_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21728" class="text" style="visibility: visible;">
-=======
-      <div id="u21693" class="ax_default box_1">
-        <div id="u21693_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21694" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p style="font-size:24px;"><span>简历锁定逻辑</span></p><p style="font-size:16px;"><span>——ATS简历、流程的锁定及相关角色的操作控制逻辑</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21729" class="ax_default box_1">
         <div id="u21729_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21730" class="text" style="visibility: visible;">
-=======
-      <div id="u21695" class="ax_default box_1">
-        <div id="u21695_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21696" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p style="font-size:24px;"><span>设计初衷</span></p><p style="font-size:13px;"><span>- 当简历被锁定时，简历在其他流程中的操作应该被限制</span></p><p style="font-size:13px;"><span>- 避免重复流程，尽可能减少对候选人的重复骚扰</span></p><p style="font-size:13px;"><span>- 减少利用进入面试来锁定的现状</span></p><p style="font-size:13px;"><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21731" class="ax_default box_1">
         <div id="u21731_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21732" class="text" style="visibility: visible;">
-=======
-      <div id="u21697" class="ax_default box_1">
-        <div id="u21697_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21698" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p style="font-size:24px;"><span>需求背景</span></p><p style="font-size:13px;"><span>- 很多业务方为了进行抢人，或防止被人抢，会将联系人提前进入面试进儿锁定，进而错过了人才的黄金求职期，造成资源浪费</span></p><p style="font-size:13px;"><span><br></span></p><p style="font-size:13px;"><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21733" class="ax_default box_1">
         <div id="u21733_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21734" class="text" style="visibility: visible;">
-=======
-      <div id="u21699" class="ax_default box_1">
-        <div id="u21699_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21700" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p style="font-size:24px;"><span>设计原则</span></p><p style="font-size:13px;"><span>- 不影响现有流程的执行</span></p><p style="font-size:13px;"><span>- 给出如今直接进入面试锁定15天的替代方案</span></p><p style="font-size:13px;"><span><br></span></p><p style="font-size:13px;"><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21735" class="ax_default box_1">
         <div id="u21735_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21736" class="text" style="visibility: visible;">
-=======
-      <div id="u21701" class="ax_default box_1">
-        <div id="u21701_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21702" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p style="font-size:24px;"><span>业务逻辑</span></p><p style="font-size:13px;"><span><br></span></p><p style="font-size:13px;"><span><br></span></p><p style="font-size:13px;"><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21737" class="ax_default flow_shape">
         <div id="u21737_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21738" class="text" style="visibility: visible;">
-=======
-      <div id="u21703" class="ax_default flow_shape">
-        <div id="u21703_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21704" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>上传简历</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21739" class="ax_default flow_shape">
         <div id="u21739_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21740" class="text" style="visibility: visible;">
-=======
-      <div id="u21705" class="ax_default flow_shape">
-        <div id="u21705_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21706" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>转发评审</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21741" class="ax_default flow_shape">
         <div id="u21741_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21742" class="text" style="visibility: visible;">
-=======
-      <div id="u21707" class="ax_default flow_shape">
-        <div id="u21707_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21708" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>简历详情页出现锁定按钮</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Actor) -->
-<<<<<<< HEAD
       <div id="u21743" class="ax_default flow_shape">
         <img id="u21743_img" class="img " src="images/简历锁定逻辑/u21743.png"/>
         <!-- Unnamed () -->
         <div id="u21744" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21709" class="ax_default flow_shape">
-        <img id="u21709_img" class="img " src="images/简历锁定逻辑/u21709.png"/>
-        <!-- Unnamed () -->
-        <div id="u21710" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21745" class="ax_default label">
         <div id="u21745_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21746" class="text" style="visibility: visible;">
-=======
-      <div id="u21711" class="ax_default label">
-        <div id="u21711_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21712" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>内容贡献者</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Actor) -->
-<<<<<<< HEAD
       <div id="u21747" class="ax_default flow_shape">
         <img id="u21747_img" class="img " src="images/简历锁定逻辑/u21743.png"/>
         <!-- Unnamed () -->
         <div id="u21748" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21713" class="ax_default flow_shape">
-        <img id="u21713_img" class="img " src="images/简历锁定逻辑/u21709.png"/>
-        <!-- Unnamed () -->
-        <div id="u21714" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21749" class="ax_default label">
         <div id="u21749_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21750" class="text" style="visibility: visible;">
-=======
-      <div id="u21715" class="ax_default label">
-        <div id="u21715_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21716" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>内容获取者</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21751" class="ax_default connector">
         <img id="u21751_seg0" class="img " src="images/简历锁定逻辑/u21751_seg0.png" alt="u21751_seg0"/>
         <img id="u21751_seg1" class="img " src="images/简历锁定逻辑/u21751_seg1.png" alt="u21751_seg1"/>
         <img id="u21751_seg2" class="img " src="images/简历锁定逻辑/u21751_seg2.png" alt="u21751_seg2"/>
         <!-- Unnamed () -->
         <div id="u21752" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21717" class="ax_default connector">
-        <img id="u21717_seg0" class="img " src="images/简历锁定逻辑/u21717_seg0.png" alt="u21717_seg0"/>
-        <img id="u21717_seg1" class="img " src="images/简历锁定逻辑/u21717_seg1.png" alt="u21717_seg1"/>
-        <img id="u21717_seg2" class="img " src="images/简历锁定逻辑/u21717_seg2.png" alt="u21717_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21718" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21753" class="ax_default connector">
         <img id="u21753_seg0" class="img " src="images/简历锁定逻辑/u21753_seg0.png" alt="u21753_seg0"/>
         <img id="u21753_seg1" class="img " src="images/简历锁定逻辑/u21753_seg1.png" alt="u21753_seg1"/>
         <img id="u21753_seg2" class="img " src="images/简历锁定逻辑/u21753_seg2.png" alt="u21753_seg2"/>
         <!-- Unnamed () -->
         <div id="u21754" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21719" class="ax_default connector">
-        <img id="u21719_seg0" class="img " src="images/简历锁定逻辑/u21719_seg0.png" alt="u21719_seg0"/>
-        <img id="u21719_seg1" class="img " src="images/简历锁定逻辑/u21719_seg1.png" alt="u21719_seg1"/>
-        <img id="u21719_seg2" class="img " src="images/简历锁定逻辑/u21719_seg2.png" alt="u21719_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21720" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21755" class="ax_default flow_shape">
         <div id="u21755_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21756" class="text" style="visibility: visible;">
-=======
-      <div id="u21721" class="ax_default flow_shape">
-        <div id="u21721_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21722" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>安排面试</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Diamond) -->
-<<<<<<< HEAD
       <div id="u21757" class="ax_default flow_shape">
         <img id="u21757_img" class="img " src="images/简历锁定逻辑/u21757.png"/>
         <!-- Unnamed () -->
         <div id="u21758" class="text" style="visibility: visible;">
-=======
-      <div id="u21723" class="ax_default flow_shape">
-        <img id="u21723_img" class="img " src="images/简历锁定逻辑/u21723.png"/>
-        <!-- Unnamed () -->
-        <div id="u21724" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>是否在3天锁定期内</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21759" class="ax_default flow_shape">
         <div id="u21759_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21760" class="text" style="visibility: visible;">
-=======
-      <div id="u21725" class="ax_default flow_shape">
-        <div id="u21725_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21726" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>进入面试锁定周期</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21761" class="ax_default flow_shape">
         <div id="u21761_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21762" class="text" style="visibility: visible;">
-=======
-      <div id="u21727" class="ax_default flow_shape">
-        <div id="u21727_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21728" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>刷新锁定周期</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21763" class="ax_default connector">
         <img id="u21763_seg0" class="img " src="images/简历锁定逻辑/u21763_seg0.png" alt="u21763_seg0"/>
         <!-- Unnamed () -->
         <div id="u21764" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21729" class="ax_default connector">
-        <img id="u21729_seg0" class="img " src="images/简历锁定逻辑/u21729_seg0.png" alt="u21729_seg0"/>
-        <!-- Unnamed () -->
-        <div id="u21730" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21765" class="ax_default connector">
         <img id="u21765_seg0" class="img " src="images/简历锁定逻辑/u21765_seg0.png" alt="u21765_seg0"/>
         <!-- Unnamed () -->
         <div id="u21766" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21731" class="ax_default connector">
-        <img id="u21731_seg0" class="img " src="images/简历锁定逻辑/u21731_seg0.png" alt="u21731_seg0"/>
-        <!-- Unnamed () -->
-        <div id="u21732" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21767" class="ax_default connector">
         <img id="u21767_seg0" class="img " src="images/简历锁定逻辑/u21767_seg0.png" alt="u21767_seg0"/>
         <!-- Unnamed () -->
         <div id="u21768" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21733" class="ax_default connector">
-        <img id="u21733_seg0" class="img " src="images/简历锁定逻辑/u21733_seg0.png" alt="u21733_seg0"/>
-        <!-- Unnamed () -->
-        <div id="u21734" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21769" class="ax_default label">
         <div id="u21769_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21770" class="text" style="visibility: visible;">
-=======
-      <div id="u21735" class="ax_default label">
-        <div id="u21735_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21736" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>是</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21771" class="ax_default flow_shape">
         <div id="u21771_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21772" class="text" style="visibility: visible;">
-=======
-      <div id="u21737" class="ax_default flow_shape">
-        <div id="u21737_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21738" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>“锁定”命令</span></p><p><span>触发逻辑</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21773" class="ax_default flow_shape">
         <div id="u21773_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21774" class="text" style="visibility: visible;">
-=======
-      <div id="u21739" class="ax_default flow_shape">
-        <div id="u21739_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21740" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>“解锁”命令</span></p><p><span>触发逻辑</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21775" class="ax_default flow_shape">
         <div id="u21775_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21776" class="text" style="visibility: visible;">
-=======
-      <div id="u21741" class="ax_default flow_shape">
-        <div id="u21741_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21742" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定按钮提示文字变为“锁定中”，button变灰</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21777" class="ax_default flow_shape">
         <div id="u21777_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21778" class="text" style="visibility: visible;">
-=======
-      <div id="u21743" class="ax_default flow_shape">
-        <div id="u21743_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21744" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定按钮提示文字变为“锁定简历”，button颜色恢复</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21779" class="ax_default flow_shape">
         <div id="u21779_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21780" class="text" style="visibility: visible;">
-=======
-      <div id="u21745" class="ax_default flow_shape">
-        <div id="u21745_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21746" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>人才列表中执行锁定逻辑</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21781" class="ax_default flow_shape">
         <div id="u21781_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21782" class="text" style="visibility: visible;">
-=======
-      <div id="u21747" class="ax_default flow_shape">
-        <div id="u21747_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21748" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>人才列表中执行解锁逻辑</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21783" class="ax_default connector">
         <img id="u21783_seg0" class="img " src="images/简历锁定逻辑/u21783_seg0.png" alt="u21783_seg0"/>
         <img id="u21783_seg1" class="img " src="images/简历锁定逻辑/u21783_seg1.png" alt="u21783_seg1"/>
         <img id="u21783_seg2" class="img " src="images/简历锁定逻辑/u21753_seg2.png" alt="u21783_seg2"/>
         <!-- Unnamed () -->
         <div id="u21784" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21749" class="ax_default connector">
-        <img id="u21749_seg0" class="img " src="images/简历锁定逻辑/u21749_seg0.png" alt="u21749_seg0"/>
-        <img id="u21749_seg1" class="img " src="images/简历锁定逻辑/u21749_seg1.png" alt="u21749_seg1"/>
-        <img id="u21749_seg2" class="img " src="images/简历锁定逻辑/u21719_seg2.png" alt="u21749_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21750" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21785" class="ax_default connector">
         <img id="u21785_seg0" class="img " src="images/简历锁定逻辑/u21785_seg0.png" alt="u21785_seg0"/>
         <img id="u21785_seg1" class="img " src="images/简历锁定逻辑/u21785_seg1.png" alt="u21785_seg1"/>
         <img id="u21785_seg2" class="img " src="images/简历锁定逻辑/u21785_seg2.png" alt="u21785_seg2"/>
         <!-- Unnamed () -->
         <div id="u21786" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21751" class="ax_default connector">
-        <img id="u21751_seg0" class="img " src="images/简历锁定逻辑/u21751_seg0.png" alt="u21751_seg0"/>
-        <img id="u21751_seg1" class="img " src="images/简历锁定逻辑/u21751_seg1.png" alt="u21751_seg1"/>
-        <img id="u21751_seg2" class="img " src="images/简历锁定逻辑/u21751_seg2.png" alt="u21751_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21752" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21787" class="ax_default connector">
         <img id="u21787_seg0" class="img " src="images/简历锁定逻辑/u21787_seg0.png" alt="u21787_seg0"/>
         <img id="u21787_seg1" class="img " src="images/简历锁定逻辑/u21787_seg1.png" alt="u21787_seg1"/>
         <img id="u21787_seg2" class="img " src="images/简历锁定逻辑/u21787_seg2.png" alt="u21787_seg2"/>
         <!-- Unnamed () -->
         <div id="u21788" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21753" class="ax_default connector">
-        <img id="u21753_seg0" class="img " src="images/简历锁定逻辑/u21753_seg0.png" alt="u21753_seg0"/>
-        <img id="u21753_seg1" class="img " src="images/简历锁定逻辑/u21753_seg1.png" alt="u21753_seg1"/>
-        <img id="u21753_seg2" class="img " src="images/简历锁定逻辑/u21753_seg2.png" alt="u21753_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21754" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21789" class="ax_default connector">
         <img id="u21789_seg0" class="img " src="images/简历锁定逻辑/u21789_seg0.png" alt="u21789_seg0"/>
         <img id="u21789_seg1" class="img " src="images/简历锁定逻辑/u21785_seg1.png" alt="u21789_seg1"/>
         <img id="u21789_seg2" class="img " src="images/移动端分享流程/u13892_seg2.png" alt="u21789_seg2"/>
         <!-- Unnamed () -->
         <div id="u21790" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21755" class="ax_default connector">
-        <img id="u21755_seg0" class="img " src="images/简历锁定逻辑/u21755_seg0.png" alt="u21755_seg0"/>
-        <img id="u21755_seg1" class="img " src="images/简历锁定逻辑/u21751_seg1.png" alt="u21755_seg1"/>
-        <img id="u21755_seg2" class="img " src="images/移动端分享流程/u13872_seg2.png" alt="u21755_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21756" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
-<<<<<<< HEAD
       <div id="u21791" class="ax_default _图片">
         <img id="u21791_img" class="img " src="images/简历锁定逻辑/u21791.png"/>
         <!-- Unnamed () -->
         <div id="u21792" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21757" class="ax_default _图片">
-        <img id="u21757_img" class="img " src="images/简历锁定逻辑/u21757.png"/>
-        <!-- Unnamed () -->
-        <div id="u21758" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21793" class="ax_default box_1">
         <div id="u21793_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21794" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21759" class="ax_default box_1">
-        <div id="u21759_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21760" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- juxing (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21795" class="ax_default box_1" data-label="juxing">
         <div id="u21795_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21796" class="text" style="visibility: visible;">
-=======
-      <div id="u21761" class="ax_default box_1" data-label="juxing">
-        <div id="u21761_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21762" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定简历</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-<<<<<<< HEAD
       <div id="u21797" class="ax_default">
 
         <!-- juxing (Rectangle) -->
@@ -617,156 +386,86 @@
           <div id="u21798_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21799" class="text" style="visibility: visible;">
-=======
-      <div id="u21763" class="ax_default" data-width="294" data-height="406">
-
-        <!-- juxing (Rectangle) -->
-        <div id="u21764" class="ax_default box_1" data-label="juxing">
-          <div id="u21764_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21765" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>锁定中</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21800" class="ax_default label">
           <div id="u21800_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21801" class="text" style="visibility: visible;">
-=======
-        <div id="u21766" class="ax_default label">
-          <div id="u21766_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21767" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>两种状态</span></p><p><span><br></span></p><p><span>未锁定状态：</span></p><p><span><br></span></p><p><span>锁定中状态：</span></p>
           </div>
         </div>
 
         <!-- juxing (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21802" class="ax_default box_1" data-label="juxing">
           <div id="u21802_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21803" class="text" style="visibility: visible;">
-=======
-        <div id="u21768" class="ax_default box_1" data-label="juxing">
-          <div id="u21768_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21769" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>锁定简历</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21804" class="ax_default label">
           <div id="u21804_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21805" class="text" style="visibility: visible;">
             <p><span style="font-family:'ArialMT', 'Arial';">锁定简历按钮</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">当简历生成或不在锁定状态中时，即处于非锁定状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">权限：任何人可点击</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击效果：点击出现确认提示框，确认则切换至锁定中状态</span></p>
-=======
-        <div id="u21770" class="ax_default label">
-          <div id="u21770_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21771" class="text">
-            <p><span style="font-family:'Arial Normal', 'Arial';">锁定简历按钮</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">当简历生成或不在锁定状态中时，即处于非锁定状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">权限：任何人可点击</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击效果：点击出现确认提示框，确认则切换至锁定中状态</span></p>
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21806" class="ax_default label">
           <div id="u21806_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21807" class="text" style="visibility: visible;">
             <p><span style="font-family:'ArialMT', 'Arial';">锁定中</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">按钮：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击“锁定简历”按钮确认后进入锁定中状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">权限：锁定人可点击，其余人不可点</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击效果：点击出现确认提示框，确认则切换未锁定状态</span></p>
-=======
-        <div id="u21772" class="ax_default label">
-          <div id="u21772_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21773" class="text">
-            <p><span style="font-family:'Arial Normal', 'Arial';">锁定中</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">按钮：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击“锁定简历”按钮确认后进入锁定中状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">权限：锁定人可点击，其余人不可点</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击效果：点击出现确认提示框，确认则切换未锁定状态</span></p>
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-<<<<<<< HEAD
       <div id="u21808" class="ax_default ellipse">
         <img id="u21808_img" class="img " src="images/简历锁定逻辑/u21808.png"/>
         <!-- Unnamed () -->
         <div id="u21809" class="text" style="visibility: visible;">
-=======
-      <div id="u21774" class="ax_default ellipse">
-        <img id="u21774_img" class="img " src="images/简历锁定逻辑/u21774.png"/>
-        <!-- Unnamed () -->
-        <div id="u21775" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>1</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21810" class="ax_default connector">
         <img id="u21810_seg0" class="img " src="images/简历锁定逻辑/u21810_seg0.png" alt="u21810_seg0"/>
         <img id="u21810_seg1" class="img " src="images/简历锁定逻辑/u21810_seg1.png" alt="u21810_seg1"/>
         <img id="u21810_seg2" class="img " src="images/简历锁定逻辑/u21810_seg2.png" alt="u21810_seg2"/>
         <!-- Unnamed () -->
         <div id="u21811" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21776" class="ax_default connector">
-        <img id="u21776_seg0" class="img " src="images/简历锁定逻辑/u21776_seg0.png" alt="u21776_seg0"/>
-        <img id="u21776_seg1" class="img " src="images/简历锁定逻辑/u21776_seg1.png" alt="u21776_seg1"/>
-        <img id="u21776_seg2" class="img " src="images/简历锁定逻辑/u21776_seg2.png" alt="u21776_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21777" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
-<<<<<<< HEAD
       <div id="u21812" class="ax_default _图片">
         <img id="u21812_img" class="img " src="images/简历锁定逻辑/u21812.png"/>
         <!-- Unnamed () -->
         <div id="u21813" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21778" class="ax_default _图片">
-        <img id="u21778_img" class="img " src="images/简历锁定逻辑/u21778.png"/>
-        <!-- Unnamed () -->
-        <div id="u21779" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- lockbutton (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21814" class="ax_default box_1" data-label="lockbutton">
         <div id="u21814_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21815" class="text" style="visibility: visible;">
-=======
-      <div id="u21780" class="ax_default box_1" data-label="lockbutton">
-        <div id="u21780_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21781" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定简历</span></p>
         </div>
       </div>
 
       <!-- lockhint (Group) -->
-<<<<<<< HEAD
       <div id="u21816" class="ax_default ax_default_hidden" data-label="lockhint" style="display: none; visibility: hidden">
 
         <!-- Unnamed (Rectangle) -->
@@ -774,101 +473,56 @@
           <div id="u21817_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21818" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21782" class="ax_default ax_default_hidden" data-label="lockhint" style="display:none; visibility: hidden" data-width="0" data-height="0">
-
-        <!-- Unnamed (Rectangle) -->
-        <div id="u21783" class="ax_default box_1">
-          <div id="u21783_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21784" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span></span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21819" class="ax_default label">
           <div id="u21819_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21820" class="text" style="visibility: visible;">
-=======
-        <div id="u21785" class="ax_default label">
-          <div id="u21785_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21786" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>进入锁定</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21821" class="ax_default label">
           <div id="u21821_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21822" class="text" style="visibility: visible;">
-=======
-        <div id="u21787" class="ax_default label">
-          <div id="u21787_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21788" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>确定锁定简历么？</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21823" class="ax_default label">
           <div id="u21823_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21824" class="text" style="visibility: visible;">
-=======
-        <div id="u21789" class="ax_default label">
-          <div id="u21789_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21790" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>温馨提示：进入锁定后，简历将为您锁定3天，期间别</span></p><p><span>人无法操作该份简历</span></p>
           </div>
         </div>
 
         <!-- lockconfirm (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21825" class="ax_default box_1" data-label="lockconfirm">
           <div id="u21825_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21826" class="text" style="visibility: visible;">
-=======
-        <div id="u21791" class="ax_default box_1" data-label="lockconfirm">
-          <div id="u21791_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21792" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>确定</span></p>
           </div>
         </div>
 
         <!-- lockcnacel (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21827" class="ax_default box_1" data-label="lockcnacel">
           <div id="u21827_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21828" class="text" style="visibility: visible;">
-=======
-        <div id="u21793" class="ax_default box_1" data-label="lockcnacel">
-          <div id="u21793_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21794" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>取消</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Checkbox) -->
-<<<<<<< HEAD
         <div id="u21829" class="ax_default checkbox">
           <label for="u21829_input">
             <!-- Unnamed () -->
@@ -877,37 +531,19 @@
             </div>
           </label>
           <input id="u21829_input" type="checkbox" value="checkbox"/>
-=======
-        <div id="u21795" class="ax_default checkbox">
-          <label for="u21795_input">
-            <!-- Unnamed () -->
-            <div id="u21796" class="text">
-              <p><span>不再显示</span></p>
-            </div>
-          </label>
-          <input id="u21795_input" type="checkbox" value="checkbox"/>
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
         </div>
       </div>
 
       <!-- unlockbutton (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21831" class="ax_default box_1 ax_default_hidden" data-label="unlockbutton" style="display: none; visibility: hidden">
         <div id="u21831_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21832" class="text" style="visibility: visible;">
-=======
-      <div id="u21797" class="ax_default box_1 ax_default_hidden" data-label="unlockbutton" style="display:none; visibility: hidden">
-        <div id="u21797_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21798" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定中</span></p>
         </div>
       </div>
 
       <!--  unlockhint (Group) -->
-<<<<<<< HEAD
       <div id="u21833" class="ax_default ax_default_hidden" data-label="&nbsp;unlockhint" style="display: none; visibility: hidden">
 
         <!-- Unnamed (Rectangle) -->
@@ -915,101 +551,56 @@
           <div id="u21834_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21835" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21799" class="ax_default ax_default_hidden" data-label="&nbsp;unlockhint" style="display:none; visibility: hidden" data-width="0" data-height="0">
-
-        <!-- Unnamed (Rectangle) -->
-        <div id="u21800" class="ax_default box_1">
-          <div id="u21800_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21801" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span></span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21836" class="ax_default label">
           <div id="u21836_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21837" class="text" style="visibility: visible;">
-=======
-        <div id="u21802" class="ax_default label">
-          <div id="u21802_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21803" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>解除锁定</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21838" class="ax_default label">
           <div id="u21838_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21839" class="text" style="visibility: visible;">
-=======
-        <div id="u21804" class="ax_default label">
-          <div id="u21804_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21805" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>确定解锁简历么？</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21840" class="ax_default label">
           <div id="u21840_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21841" class="text" style="visibility: visible;">
-=======
-        <div id="u21806" class="ax_default label">
-          <div id="u21806_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21807" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>温馨提示：简历解锁后其他用户都将拥有该份简历的</span></p><p><span>操作权限</span></p>
           </div>
         </div>
 
         <!-- lockconfirm (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21842" class="ax_default box_1" data-label="lockconfirm">
           <div id="u21842_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21843" class="text" style="visibility: visible;">
-=======
-        <div id="u21808" class="ax_default box_1" data-label="lockconfirm">
-          <div id="u21808_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21809" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>确定</span></p>
           </div>
         </div>
 
         <!-- lockcnacel (Rectangle) -->
-<<<<<<< HEAD
         <div id="u21844" class="ax_default box_1" data-label="lockcnacel">
           <div id="u21844_div" class=""></div>
           <!-- Unnamed () -->
           <div id="u21845" class="text" style="visibility: visible;">
-=======
-        <div id="u21810" class="ax_default box_1" data-label="lockcnacel">
-          <div id="u21810_div" class=""></div>
-          <!-- Unnamed () -->
-          <div id="u21811" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
             <p><span>取消</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Checkbox) -->
-<<<<<<< HEAD
         <div id="u21846" class="ax_default checkbox">
           <label for="u21846_input">
             <!-- Unnamed () -->
@@ -1018,255 +609,139 @@
             </div>
           </label>
           <input id="u21846_input" type="checkbox" value="checkbox"/>
-=======
-        <div id="u21812" class="ax_default checkbox">
-          <label for="u21812_input">
-            <!-- Unnamed () -->
-            <div id="u21813" class="text">
-              <p><span>不再显示</span></p>
-            </div>
-          </label>
-          <input id="u21812_input" type="checkbox" value="checkbox"/>
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21848" class="ax_default label">
         <div id="u21848_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21849" class="text" style="visibility: visible;">
-=======
-      <div id="u21814" class="ax_default label">
-        <div id="u21814_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21815" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>交互方案</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21850" class="ax_default connector">
         <img id="u21850_seg0" class="img " src="images/简历锁定逻辑/u21850_seg0.png" alt="u21850_seg0"/>
         <!-- Unnamed () -->
         <div id="u21851" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21816" class="ax_default connector">
-        <img id="u21816_seg0" class="img " src="images/简历锁定逻辑/u21816_seg0.png" alt="u21816_seg0"/>
-        <!-- Unnamed () -->
-        <div id="u21817" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21852" class="ax_default connector">
         <img id="u21852_seg0" class="img " src="images/简历锁定逻辑/u21852_seg0.png" alt="u21852_seg0"/>
         <!-- Unnamed () -->
         <div id="u21853" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21818" class="ax_default connector">
-        <img id="u21818_seg0" class="img " src="images/简历锁定逻辑/u21818_seg0.png" alt="u21818_seg0"/>
-        <!-- Unnamed () -->
-        <div id="u21819" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21854" class="ax_default flow_shape">
         <div id="u21854_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21855" class="text" style="visibility: visible;">
-=======
-      <div id="u21820" class="ax_default flow_shape">
-        <div id="u21820_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21821" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>未锁定状态</span></p><p><span>（前置）</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21856" class="ax_default flow_shape">
         <div id="u21856_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21857" class="text" style="visibility: visible;">
-=======
-      <div id="u21822" class="ax_default flow_shape">
-        <div id="u21822_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21823" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>简历上传完成，默认为未锁定状态</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21858" class="ax_default flow_shape">
         <div id="u21858_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21859" class="text" style="visibility: visible;">
-=======
-      <div id="u21824" class="ax_default flow_shape">
-        <div id="u21824_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21825" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定3天周期结束，尚未执行下一次锁定</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21860" class="ax_default flow_shape">
         <div id="u21860_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21861" class="text" style="visibility: visible;">
-=======
-      <div id="u21826" class="ax_default flow_shape">
-        <div id="u21826_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21827" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>锁定15天周期结束，尚未执行下一次锁定</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21862" class="ax_default flow_shape">
         <div id="u21862_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21863" class="text" style="visibility: visible;">
-=======
-      <div id="u21828" class="ax_default flow_shape">
-        <div id="u21828_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21829" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>面试流程中因放弃，失败等原因解除锁定</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-<<<<<<< HEAD
       <div id="u21864" class="ax_default flow_shape">
         <div id="u21864_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u21865" class="text" style="visibility: visible;">
-=======
-      <div id="u21830" class="ax_default flow_shape">
-        <div id="u21830_div" class=""></div>
-        <!-- Unnamed () -->
-        <div id="u21831" class="text">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span>3天锁定期内执行解锁操作</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21866" class="ax_default connector">
         <img id="u21866_seg0" class="img " src="images/简历锁定逻辑/u21850_seg0.png" alt="u21866_seg0"/>
         <!-- Unnamed () -->
         <div id="u21867" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21832" class="ax_default connector">
-        <img id="u21832_seg0" class="img " src="images/简历锁定逻辑/u21816_seg0.png" alt="u21832_seg0"/>
-        <!-- Unnamed () -->
-        <div id="u21833" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21868" class="ax_default connector">
         <img id="u21868_seg0" class="img " src="images/简历锁定逻辑/u21783_seg0.png" alt="u21868_seg0"/>
         <img id="u21868_seg1" class="img " src="images/简历锁定逻辑/u21868_seg1.png" alt="u21868_seg1"/>
         <img id="u21868_seg2" class="img " src="images/简历锁定逻辑/u21753_seg2.png" alt="u21868_seg2"/>
         <!-- Unnamed () -->
         <div id="u21869" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21834" class="ax_default connector">
-        <img id="u21834_seg0" class="img " src="images/简历锁定逻辑/u21749_seg0.png" alt="u21834_seg0"/>
-        <img id="u21834_seg1" class="img " src="images/简历锁定逻辑/u21834_seg1.png" alt="u21834_seg1"/>
-        <img id="u21834_seg2" class="img " src="images/简历锁定逻辑/u21719_seg2.png" alt="u21834_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21835" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21870" class="ax_default connector">
         <img id="u21870_seg0" class="img " src="images/简历锁定逻辑/u21783_seg0.png" alt="u21870_seg0"/>
         <img id="u21870_seg1" class="img " src="images/简历锁定逻辑/u21870_seg1.png" alt="u21870_seg1"/>
         <img id="u21870_seg2" class="img " src="images/简历锁定逻辑/u21870_seg2.png" alt="u21870_seg2"/>
         <!-- Unnamed () -->
         <div id="u21871" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21836" class="ax_default connector">
-        <img id="u21836_seg0" class="img " src="images/简历锁定逻辑/u21749_seg0.png" alt="u21836_seg0"/>
-        <img id="u21836_seg1" class="img " src="images/简历锁定逻辑/u21836_seg1.png" alt="u21836_seg1"/>
-        <img id="u21836_seg2" class="img " src="images/简历锁定逻辑/u21836_seg2.png" alt="u21836_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21837" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21872" class="ax_default connector">
         <img id="u21872_seg0" class="img " src="images/简历锁定逻辑/u21785_seg0.png" alt="u21872_seg0"/>
         <img id="u21872_seg1" class="img " src="images/简历编辑页/u16110_seg1.png" alt="u21872_seg1"/>
         <img id="u21872_seg2" class="img " src="images/简历锁定逻辑/u21785_seg2.png" alt="u21872_seg2"/>
         <!-- Unnamed () -->
         <div id="u21873" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21838" class="ax_default connector">
-        <img id="u21838_seg0" class="img " src="images/简历锁定逻辑/u21751_seg0.png" alt="u21838_seg0"/>
-        <img id="u21838_seg1" class="img " src="images/简历编辑页/u16090_seg1.png" alt="u21838_seg1"/>
-        <img id="u21838_seg2" class="img " src="images/简历锁定逻辑/u21751_seg2.png" alt="u21838_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21839" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-<<<<<<< HEAD
       <div id="u21874" class="ax_default connector">
         <img id="u21874_seg0" class="img " src="images/简历锁定逻辑/u21785_seg0.png" alt="u21874_seg0"/>
         <img id="u21874_seg1" class="img " src="images/简历锁定逻辑/u21874_seg1.png" alt="u21874_seg1"/>
         <img id="u21874_seg2" class="img " src="images/简历锁定逻辑/u21785_seg2.png" alt="u21874_seg2"/>
         <!-- Unnamed () -->
         <div id="u21875" class="text" style="display: none; visibility: hidden">
-=======
-      <div id="u21840" class="ax_default connector">
-        <img id="u21840_seg0" class="img " src="images/简历锁定逻辑/u21751_seg0.png" alt="u21840_seg0"/>
-        <img id="u21840_seg1" class="img " src="images/简历锁定逻辑/u21840_seg1.png" alt="u21840_seg1"/>
-        <img id="u21840_seg2" class="img " src="images/简历锁定逻辑/u21751_seg2.png" alt="u21840_seg2"/>
-        <!-- Unnamed () -->
-        <div id="u21841" class="text" style="display:none; visibility: hidden">
->>>>>>> eacd562ed0b6b07114aa4e9bf842b419e9b07642
           <p><span></span></p>
         </div>
       </div>
