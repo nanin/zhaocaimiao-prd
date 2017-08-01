@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>受保护渠道逻辑汇总</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/受保护渠道逻辑汇总/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/受保护渠道逻辑汇总/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31332" class="ax_default box_1">
+        <div id="u31332_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31333" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span style="font-family:'.AppleSystemUIFont';color:#000000;">受保护渠道／推荐人逻辑汇总</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">——受保护人的产生、消亡、使用、覆盖等逻辑汇总</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31334" class="ax_default box_1">
+        <div id="u31334_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31335" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>名词缩略定义</span></p><p style="font-size:13px;"><span>－简历 受保护渠道 CVP（此处的CVP指渠道名＋人）</span></p><p style="font-size:13px;"><span>－简历 受保护渠道保护期 CVT</span></p><p style="font-size:13px;"><span>－流程 受保护渠道 PP</span></p><p style="font-size:13px;"><span>－反馈流程 受保护渠道 FPP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31336" class="ax_default box_1">
+        <div id="u31336_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31337" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>CVP，PP，FPP应用原则</span></p><p style="font-size:13px;"><span>－CVP用于记录被保护渠道，供PP读取使用</span></p><p style="font-size:13px;"><span>－PP从CVP取最新值</span></p><p style="font-size:13px;"><span>－FPP严格遵循谁创建记录谁的原则</span></p><p style="font-size:13px;"><span>综合而言，能够记录当前被保护人CVP，体现CVP的存在（PP），和忠实记录流程产生的原因（FPP），从而覆盖任何利益分配场景</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31338" class="ax_default connector">
+        <img id="u31338_seg0" class="img " src="images/受保护渠道逻辑汇总/u31338_seg0.png" alt="u31338_seg0"/>
+        <img id="u31338_seg1" class="img " src="images/人才库_1/u5942_seg1.png" alt="u31338_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31339" class="text" style="visibility: visible;">
+          <p><span>流程</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31340" class="ax_default connector">
+        <img id="u31340_seg0" class="img " src="images/受保护渠道逻辑汇总/u31340_seg0.png" alt="u31340_seg0"/>
+        <img id="u31340_seg1" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u31340_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31341" class="text" style="visibility: visible;">
+          <p><span>简历</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31342" class="ax_default connector">
+        <img id="u31342_seg0" class="img " src="images/受保护渠道逻辑汇总/u31342_seg0.png" alt="u31342_seg0"/>
+        <img id="u31342_seg1" class="img " src="images/受保护渠道逻辑汇总/u31342_seg1.png" alt="u31342_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31343" class="text" style="visibility: visible;">
+          <p><span>站内操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31344" class="ax_default box_1">
+        <div id="u31344_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31345" class="text" style="visibility: visible;">
+          <p><span>渠道X</span></p><p><span>简历Jason</span></p><p><span>发生投递到职位Java</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u31346" class="ax_default box_1">
+        <img id="u31346_img" class="img " src="images/项目一键发布逻辑/u13737.png"/>
+        <!-- Unnamed () -->
+        <div id="u31347" class="text" style="visibility: visible;">
+          <p><span>简历重复？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31348" class="ax_default connector">
+        <img id="u31348_seg0" class="img " src="images/p1职位详情页awt_ui/u23633_seg0.png" alt="u31348_seg0"/>
+        <img id="u31348_seg1" class="img " src="images/受保护渠道逻辑汇总/u31348_seg1.png" alt="u31348_seg1"/>
+        <img id="u31348_seg2" class="img " src="images/受保护渠道逻辑汇总/u31348_seg2.png" alt="u31348_seg2"/>
+        <img id="u31348_seg3" class="img " src="images/受保护渠道逻辑汇总/u31348_seg3.png" alt="u31348_seg3"/>
+        <img id="u31348_seg4" class="img " src="images/p2我的推荐列表awt_ui/u24370_seg3.png" alt="u31348_seg4"/>
+        <img id="u31348_seg5" class="img " src="images/p2我的推荐列表awt_ui/u24370_seg4.png" alt="u31348_seg5"/>
+        <!-- Unnamed () -->
+        <div id="u31349" class="text" style="visibility: visible;">
+          <p><span>简历</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31350" class="ax_default connector">
+        <img id="u31350_seg0" class="img " src="images/流程流转微调/u13470_seg0.png" alt="u31350_seg0"/>
+        <img id="u31350_seg1" class="img " src="images/受保护渠道逻辑汇总/u31350_seg1.png" alt="u31350_seg1"/>
+        <img id="u31350_seg2" class="img " src="images/受保护渠道逻辑汇总/u31350_seg2.png" alt="u31350_seg2"/>
+        <img id="u31350_seg3" class="img " src="images/受保护渠道逻辑汇总/u31350_seg3.png" alt="u31350_seg3"/>
+        <img id="u31350_seg4" class="img " src="images/简历详情页_1/u10862_seg4.png" alt="u31350_seg4"/>
+        <img id="u31350_seg5" class="img " src="images/简历详情页_1/u10862_seg5.png" alt="u31350_seg5"/>
+        <!-- Unnamed () -->
+        <div id="u31351" class="text" style="visibility: visible;">
+          <p><span>流程</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31352" class="ax_default box_1">
+        <div id="u31352_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31353" class="text" style="visibility: visible;">
+          <p><span>创建新人选Jason</span></p><p><span>CVP=X</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31354" class="ax_default connector">
+        <img id="u31354_seg0" class="img " src="images/受保护渠道逻辑汇总/u31354_seg0.png" alt="u31354_seg0"/>
+        <img id="u31354_seg1" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u31354_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31355" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u31356" class="ax_default box_1">
+        <img id="u31356_img" class="img " src="images/项目一键发布逻辑/u13737.png"/>
+        <!-- Unnamed () -->
+        <div id="u31357" class="text" style="visibility: visible;">
+          <p><span>CVT＝＝0？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31358" class="ax_default connector">
+        <img id="u31358_seg0" class="img " src="images/面试安排面试评价的保存逻辑/u13382_seg0.png" alt="u31358_seg0"/>
+        <img id="u31358_seg1" class="img " src="images/受保护渠道逻辑汇总/u31358_seg1.png" alt="u31358_seg1"/>
+        <img id="u31358_seg2" class="img " src="images/受保护渠道逻辑汇总/u31358_seg2.png" alt="u31358_seg2"/>
+        <img id="u31358_seg3" class="img " src="images/受保护渠道逻辑汇总/u31358_seg3.png" alt="u31358_seg3"/>
+        <img id="u31358_seg4" class="img " src="images/面试安排面试评价的保存逻辑/u13382_seg4.png" alt="u31358_seg4"/>
+        <img id="u31358_seg5" class="img " src="images/面试安排面试评价的保存逻辑/u13382_seg5.png" alt="u31358_seg5"/>
+        <!-- Unnamed () -->
+        <div id="u31359" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u31360" class="ax_default box_1">
+        <img id="u31360_img" class="img " src="images/项目一键发布逻辑/u13737.png"/>
+        <!-- Unnamed () -->
+        <div id="u31361" class="text" style="visibility: visible;">
+          <p><span>CVP＝＝媒体</span></p><p><span>&amp;&amp; X＝＝伯乐？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31362" class="ax_default connector">
+        <img id="u31362_seg0" class="img " src="images/受保护渠道逻辑汇总/u31362_seg0.png" alt="u31362_seg0"/>
+        <img id="u31362_seg1" class="img " src="images/面试安排面试评价的保存逻辑/u13384_seg3.png" alt="u31362_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31363" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31364" class="ax_default box_1">
+        <div id="u31364_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31365" class="text" style="visibility: visible;">
+          <p><span>CVP＝X</span></p><p><span>CVT刷新</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31366" class="ax_default connector">
+        <img id="u31366_seg0" class="img " src="images/受保护渠道逻辑汇总/u31366_seg0.png" alt="u31366_seg0"/>
+        <img id="u31366_seg1" class="img " src="images/受保护渠道逻辑汇总/u31366_seg1.png" alt="u31366_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31367" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31368" class="ax_default box_1">
+        <div id="u31368_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31369" class="text" style="visibility: visible;">
+          <p><span>无更多操作</span></p><p><span>（渠道保护生效）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31370" class="ax_default connector">
+        <img id="u31370_seg0" class="img " src="images/受保护渠道逻辑汇总/u31370_seg0.png" alt="u31370_seg0"/>
+        <img id="u31370_seg1" class="img " src="images/受保护渠道逻辑汇总/u31370_seg1.png" alt="u31370_seg1"/>
+        <img id="u31370_seg2" class="img " src="images/受保护渠道逻辑汇总/u31370_seg2.png" alt="u31370_seg2"/>
+        <img id="u31370_seg3" class="img " src="images/受保护渠道逻辑汇总/u31370_seg3.png" alt="u31370_seg3"/>
+        <img id="u31370_seg4" class="img " src="images/受保护渠道逻辑汇总/u31370_seg4.png" alt="u31370_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u31371" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31372" class="ax_default connector">
+        <img id="u31372_seg0" class="img " src="images/受保护渠道逻辑汇总/u31372_seg0.png" alt="u31372_seg0"/>
+        <img id="u31372_seg1" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u31372_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31373" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31374" class="ax_default box_1">
+        <div id="u31374_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31375" class="text" style="visibility: visible;">
+          <p><span>创建流程Jason－Java</span></p><p><span>PP＝CVP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31376" class="ax_default connector">
+        <img id="u31376_seg0" class="img " src="images/流程流转微调/u13470_seg0.png" alt="u31376_seg0"/>
+        <img id="u31376_seg1" class="img " src="images/受保护渠道逻辑汇总/u31376_seg1.png" alt="u31376_seg1"/>
+        <img id="u31376_seg2" class="img " src="images/受保护渠道逻辑汇总/u31376_seg2.png" alt="u31376_seg2"/>
+        <img id="u31376_seg3" class="img " src="images/受保护渠道逻辑汇总/u31376_seg3.png" alt="u31376_seg3"/>
+        <img id="u31376_seg4" class="img " src="images/受保护渠道逻辑汇总/u31376_seg4.png" alt="u31376_seg4"/>
+        <img id="u31376_seg5" class="img " src="images/受保护渠道逻辑汇总/u31376_seg5.png" alt="u31376_seg5"/>
+        <img id="u31376_seg6" class="img " src="images/强判重规则/u13294_seg1.png" alt="u31376_seg6"/>
+        <!-- Unnamed () -->
+        <div id="u31377" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u31378" class="ax_default box_1">
+        <img id="u31378_img" class="img " src="images/项目一键发布逻辑/u13737.png"/>
+        <!-- Unnamed () -->
+        <div id="u31379" class="text" style="visibility: visible;">
+          <p><span>Jason－Java已存在？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31380" class="ax_default connector">
+        <img id="u31380_seg0" class="img " src="images/受保护渠道逻辑汇总/u31380_seg0.png" alt="u31380_seg0"/>
+        <img id="u31380_seg1" class="img " src="images/受保护渠道逻辑汇总/u31380_seg1.png" alt="u31380_seg1"/>
+        <img id="u31380_seg2" class="img " src="images/受保护渠道逻辑汇总/u31380_seg2.png" alt="u31380_seg2"/>
+        <img id="u31380_seg3" class="img " src="images/受保护渠道逻辑汇总/u31380_seg3.png" alt="u31380_seg3"/>
+        <img id="u31380_seg4" class="img " src="images/强判重规则/u13294_seg1.png" alt="u31380_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u31381" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31382" class="ax_default box_1">
+        <div id="u31382_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31383" class="text" style="visibility: visible;">
+          <p><span>创建子流程</span></p><p><span>FPP＝X</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31384" class="ax_default connector">
+        <img id="u31384_seg0" class="img " src="images/受保护渠道逻辑汇总/u31384_seg0.png" alt="u31384_seg0"/>
+        <img id="u31384_seg1" class="img " src="images/强判重规则/u13294_seg1.png" alt="u31384_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31385" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31386" class="ax_default connector">
+        <img id="u31386_seg0" class="img " src="images/受保护渠道逻辑汇总/u31386_seg0.png" alt="u31386_seg0"/>
+        <img id="u31386_seg1" class="img " src="images/受保护渠道逻辑汇总/u31386_seg1.png" alt="u31386_seg1"/>
+        <img id="u31386_seg2" class="img " src="images/强判重规则/u13294_seg1.png" alt="u31386_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u31387" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31388" class="ax_default box_1">
+        <div id="u31388_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31389" class="text" style="visibility: visible;">
+          <p><span>招聘经理Taylor</span></p><p><span>试图将简历Jason</span></p><p><span>加入到职位Java</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31390" class="ax_default box_1">
+        <div id="u31390_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31391" class="text" style="visibility: visible;">
+          <p><span>无任何动作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31392" class="ax_default connector">
+        <img id="u31392_seg0" class="img " src="images/受保护渠道逻辑汇总/u31392_seg0.png" alt="u31392_seg0"/>
+        <img id="u31392_seg1" class="img " src="images/受保护渠道逻辑汇总/u31392_seg1.png" alt="u31392_seg1"/>
+        <img id="u31392_seg2" class="img " src="images/受保护渠道逻辑汇总/u31392_seg2.png" alt="u31392_seg2"/>
+        <img id="u31392_seg3" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg3"/>
+        <img id="u31392_seg4" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg4"/>
+        <img id="u31392_seg5" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg5"/>
+        <img id="u31392_seg6" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg6"/>
+        <img id="u31392_seg7" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg7"/>
+        <img id="u31392_seg8" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg8"/>
+        <img id="u31392_seg9" class="img " src="images/受保护渠道逻辑汇总/u31392_seg3.png" alt="u31392_seg9"/>
+        <img id="u31392_seg10" class="img " src="images/受保护渠道逻辑汇总/u31392_seg10.png" alt="u31392_seg10"/>
+        <img id="u31392_seg11" class="img " src="images/受保护渠道逻辑汇总/u31392_seg11.png" alt="u31392_seg11"/>
+        <img id="u31392_seg12" class="img " src="images/受保护渠道逻辑汇总/u31392_seg12.png" alt="u31392_seg12"/>
+        <!-- Unnamed () -->
+        <div id="u31393" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31394" class="ax_default connector">
+        <img id="u31394_seg0" class="img " src="images/受保护渠道逻辑汇总/u31394_seg0.png" alt="u31394_seg0"/>
+        <img id="u31394_seg1" class="img " src="images/受保护渠道逻辑汇总/u31394_seg1.png" alt="u31394_seg1"/>
+        <img id="u31394_seg2" class="img " src="images/受保护渠道逻辑汇总/u31394_seg2.png" alt="u31394_seg2"/>
+        <img id="u31394_seg3" class="img " src="images/受保护渠道逻辑汇总/u31394_seg3.png" alt="u31394_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u31395" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31396" class="ax_default box_1">
+        <div id="u31396_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31397" class="text" style="visibility: visible;">
+          <p><span>创建流程Jason－Java</span></p><p><span>PP＝（无）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31398" class="ax_default connector">
+        <img id="u31398_seg0" class="img " src="images/受保护渠道逻辑汇总/u31398_seg0.png" alt="u31398_seg0"/>
+        <img id="u31398_seg1" class="img " src="images/受保护渠道逻辑汇总/u31342_seg1.png" alt="u31398_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31399" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31400" class="ax_default box_1">
+        <div id="u31400_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31401" class="text" style="visibility: visible;">
+          <p><span>创建子流程</span></p><p><span>FPP＝Taylor</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31402" class="ax_default connector">
+        <img id="u31402_seg0" class="img " src="images/受保护渠道逻辑汇总/u31402_seg0.png" alt="u31402_seg0"/>
+        <img id="u31402_seg1" class="img " src="images/受保护渠道逻辑汇总/u31342_seg1.png" alt="u31402_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31403" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31404" class="ax_default box_1">
+        <div id="u31404_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31405" class="text" style="visibility: visible;">
+          <p><span>创建流程Jason－Java</span></p><p><span>PP＝CVP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31406" class="ax_default connector">
+        <img id="u31406_seg0" class="img " src="images/受保护渠道逻辑汇总/u31406_seg0.png" alt="u31406_seg0"/>
+        <img id="u31406_seg1" class="img " src="images/受保护渠道逻辑汇总/u31406_seg1.png" alt="u31406_seg1"/>
+        <img id="u31406_seg2" class="img " src="images/受保护渠道逻辑汇总/u31406_seg2.png" alt="u31406_seg2"/>
+        <img id="u31406_seg3" class="img " src="images/受保护渠道逻辑汇总/u31406_seg3.png" alt="u31406_seg3"/>
+        <img id="u31406_seg4" class="img " src="images/受保护渠道逻辑汇总/u31342_seg1.png" alt="u31406_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u31407" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31408" class="ax_default connector">
+        <img id="u31408_seg0" class="img " src="images/受保护渠道逻辑汇总/u31408_seg0.png" alt="u31408_seg0"/>
+        <img id="u31408_seg1" class="img " src="images/受保护渠道逻辑汇总/u31408_seg1.png" alt="u31408_seg1"/>
+        <img id="u31408_seg2" class="img " src="images/受保护渠道逻辑汇总/u31408_seg2.png" alt="u31408_seg2"/>
+        <img id="u31408_seg3" class="img " src="images/受保护渠道逻辑汇总/u31408_seg3.png" alt="u31408_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u31409" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31410" class="ax_default box_1">
+        <div id="u31410_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u31411" class="text" style="visibility: visible;">
+          <p><span>创建子流程</span></p><p><span>FPP＝X</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31412" class="ax_default connector">
+        <img id="u31412_seg0" class="img " src="images/受保护渠道逻辑汇总/u31412_seg0.png" alt="u31412_seg0"/>
+        <img id="u31412_seg1" class="img " src="images/强判重规则/u13294_seg1.png" alt="u31412_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31413" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u31414" class="ax_default box_1">
+        <img id="u31414_img" class="img " src="images/项目一键发布逻辑/u13737.png"/>
+        <!-- Unnamed () -->
+        <div id="u31415" class="text" style="visibility: visible;">
+          <p><span>ATS对应简历</span></p><p><span>是否存在？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31416" class="ax_default connector">
+        <img id="u31416_seg0" class="img " src="images/受保护渠道逻辑汇总/u31416_seg0.png" alt="u31416_seg0"/>
+        <img id="u31416_seg1" class="img " src="images/受保护渠道逻辑汇总/u31416_seg1.png" alt="u31416_seg1"/>
+        <img id="u31416_seg2" class="img " src="images/受保护渠道逻辑汇总/u31416_seg2.png" alt="u31416_seg2"/>
+        <img id="u31416_seg3" class="img " src="images/受保护渠道逻辑汇总/u31416_seg3.png" alt="u31416_seg3"/>
+        <img id="u31416_seg4" class="img " src="images/受保护渠道逻辑汇总/u31416_seg4.png" alt="u31416_seg4"/>
+        <img id="u31416_seg5" class="img " src="images/受保护渠道逻辑汇总/u31416_seg5.png" alt="u31416_seg5"/>
+        <!-- Unnamed () -->
+        <div id="u31417" class="text" style="visibility: visible;">
+          <p><span>站内操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31418" class="ax_default connector">
+        <img id="u31418_seg0" class="img " src="images/受保护渠道逻辑汇总/u31418_seg0.png" alt="u31418_seg0"/>
+        <img id="u31418_seg1" class="img " src="images/人才库_1/u5942_seg1.png" alt="u31418_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u31419" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u31420" class="ax_default connector">
+        <img id="u31420_seg0" class="img " src="images/人才库_2/u8909_seg0.png" alt="u31420_seg0"/>
+        <img id="u31420_seg1" class="img " src="images/受保护渠道逻辑汇总/u31420_seg1.png" alt="u31420_seg1"/>
+        <img id="u31420_seg2" class="img " src="images/受保护渠道逻辑汇总/u31420_seg2.png" alt="u31420_seg2"/>
+        <img id="u31420_seg3" class="img " src="images/受保护渠道逻辑汇总/u31420_seg3.png" alt="u31420_seg3"/>
+        <img id="u31420_seg4" class="img " src="images/强判重规则/u13294_seg1.png" alt="u31420_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u31421" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

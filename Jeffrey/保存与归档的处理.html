@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>保存与归档的处理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/保存与归档的处理/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/保存与归档的处理/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42469" class="ax_default box_1">
+        <div id="u42469_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42470" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>保存与归档</span></p><p style="font-size:16px;"><span>——与ATS简历相关的交互逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42471" class="ax_default box_1">
+        <div id="u42471_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42472" class="text" style="visibility: visible;">
+          <p style="font-size:24px;"><span>设计初衷</span></p><p style="font-size:13px;"><span>－编辑简历后保存数据，不能调用已有的投递方法，否则任何简历的更新都会产生重复数据，这也是不合适的。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Right Arrow Button) -->
+      <div id="u42473" class="ax_default box_1">
+        <img id="u42473_img" class="img " src="images/保存／推荐／删除／编辑/u31252.png"/>
+        <!-- Unnamed () -->
+        <div id="u42474" class="text" style="visibility: visible;">
+          <p><span>渠道X，保存Jason简历</span></p><p><span>（此渠道不包含媒体渠道）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42475" class="ax_default connector">
+        <img id="u42475_seg0" class="img " src="images/保存与归档的处理/u42475_seg0.png" alt="u42475_seg0"/>
+        <img id="u42475_seg1" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42475_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42476" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u42477" class="ax_default box_1">
+        <img id="u42477_img" class="img " src="images/保存／推荐／删除／编辑/u31267.png"/>
+        <!-- Unnamed () -->
+        <div id="u42478" class="text" style="visibility: visible;">
+          <p><span>简历Jason重复？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42479" class="ax_default box_1">
+        <div id="u42479_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42480" class="text" style="visibility: visible;">
+          <p><span>1.ATS创建新在线简历</span></p><p><span>2.ATS生成归档“渠道-操作人“（如”内推-Jeffery“）</span></p><p><span>3.在线简历的“更新时间”记录为“保存”操作时间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42481" class="ax_default connector">
+        <img id="u42481_seg0" class="img " src="images/保存与归档的处理/u42481_seg0.png" alt="u42481_seg0"/>
+        <img id="u42481_seg1" class="img " src="images/面试安排面试评价的保存逻辑/u13384_seg3.png" alt="u42481_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42482" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42483" class="ax_default connector">
+        <img id="u42483_seg0" class="img " src="images/保存与归档的处理/u42483_seg0.png" alt="u42483_seg0"/>
+        <img id="u42483_seg1" class="img " src="images/保存与归档的处理/u42483_seg1.png" alt="u42483_seg1"/>
+        <img id="u42483_seg2" class="img " src="images/保存与归档的处理/u42483_seg2.png" alt="u42483_seg2"/>
+        <img id="u42483_seg3" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42483_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u42484" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u42485" class="ax_default box_1">
+        <img id="u42485_img" class="img " src="images/保存与归档的处理/u42485.png"/>
+        <!-- Unnamed () -->
+        <div id="u42486" class="text" style="visibility: visible;">
+          <p><span>X是否自动覆盖的渠道</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42487" class="ax_default box_1">
+        <div id="u42487_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42488" class="text" style="visibility: visible;">
+          <p><span style="font-family:'ArialMT', 'Arial';">1. 新内容覆盖原有“渠道-操作人”归档，产生更新标记</span></p><p><span style="font-family:'ArialMT', 'Arial';">2.</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在线简历的“更新时间”记录为“保存”操作时间</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3.增加简历附件（若有）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u42489" class="ax_default">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42490" class="ax_default table_cell">
+          <img id="u42490_img" class="img " src="images/流程筛选表头/u6031.png"/>
+          <!-- Unnamed () -->
+          <div id="u42491" class="text" style="visibility: visible;">
+            <p><span>渠道</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42492" class="ax_default table_cell">
+          <img id="u42492_img" class="img " src="images/流程筛选表头/u6033.png"/>
+          <!-- Unnamed () -->
+          <div id="u42493" class="text" style="visibility: visible;">
+            <p><span style="font-family:'ArialMT', 'Arial';">自动</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">覆盖</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42494" class="ax_default table_cell">
+          <img id="u42494_img" class="img " src="images/流程筛选表头/u6031.png"/>
+          <!-- Unnamed () -->
+          <div id="u42495" class="text" style="visibility: visible;">
+            <p><span>媒体</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42496" class="ax_default table_cell">
+          <img id="u42496_img" class="img " src="images/流程筛选表头/u6033.png"/>
+          <!-- Unnamed () -->
+          <div id="u42497" class="text" style="visibility: visible;">
+            <p><span>Y</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42498" class="ax_default table_cell">
+          <img id="u42498_img" class="img " src="images/流程筛选表头/u6031.png"/>
+          <!-- Unnamed () -->
+          <div id="u42499" class="text" style="visibility: visible;">
+            <p><span>官网</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42500" class="ax_default table_cell">
+          <img id="u42500_img" class="img " src="images/流程筛选表头/u6033.png"/>
+          <!-- Unnamed () -->
+          <div id="u42501" class="text" style="visibility: visible;">
+            <p><span>Y</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42502" class="ax_default table_cell">
+          <img id="u42502_img" class="img " src="images/流程筛选表头/u6031.png"/>
+          <!-- Unnamed () -->
+          <div id="u42503" class="text" style="visibility: visible;">
+            <p><span>内推</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42504" class="ax_default table_cell">
+          <img id="u42504_img" class="img " src="images/流程筛选表头/u6033.png"/>
+          <!-- Unnamed () -->
+          <div id="u42505" class="text" style="visibility: visible;">
+            <p><span>N</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42506" class="ax_default table_cell">
+          <img id="u42506_img" class="img " src="images/流程筛选表头/u6031.png"/>
+          <!-- Unnamed () -->
+          <div id="u42507" class="text" style="visibility: visible;">
+            <p><span>猎头</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42508" class="ax_default table_cell">
+          <img id="u42508_img" class="img " src="images/流程筛选表头/u6033.png"/>
+          <!-- Unnamed () -->
+          <div id="u42509" class="text" style="visibility: visible;">
+            <p><span>N</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42510" class="ax_default table_cell">
+          <img id="u42510_img" class="img " src="images/流程筛选表头/u6055.png"/>
+          <!-- Unnamed () -->
+          <div id="u42511" class="text" style="visibility: visible;">
+            <p><span>手动</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u42512" class="ax_default table_cell">
+          <img id="u42512_img" class="img " src="images/流程筛选表头/u6057.png"/>
+          <!-- Unnamed () -->
+          <div id="u42513" class="text" style="visibility: visible;">
+            <p><span>N</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42514" class="ax_default label">
+        <div id="u42514_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42515" class="text" style="visibility: visible;">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">原则：</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1. 人选本人提交的简历可以自动覆盖</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2. 非本人提交的简历不能自动覆盖</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u42516" class="ax_default box_1">
+        <img id="u42516_img" class="img " src="images/保存／推荐／删除／编辑/u31290.png"/>
+        <!-- Unnamed () -->
+        <div id="u42517" class="text" style="visibility: visible;">
+          <p><span>是否存在“渠道-操作人”</span></p><p><span>的归档</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42518" class="ax_default connector">
+        <img id="u42518_seg0" class="img " src="images/保存与归档的处理/u42518_seg0.png" alt="u42518_seg0"/>
+        <img id="u42518_seg1" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42518_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42519" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42520" class="ax_default connector">
+        <img id="u42520_seg0" class="img " src="images/保存与归档的处理/u42520_seg0.png" alt="u42520_seg0"/>
+        <img id="u42520_seg1" class="img " src="images/保存与归档的处理/u42520_seg1.png" alt="u42520_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42521" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42522" class="ax_default box_1">
+        <div id="u42522_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42523" class="text" style="visibility: visible;">
+          <p><span style="font-family:'ArialMT', 'Arial';">1. 新建“渠道-操作人”归档，产生new标记</span></p><p><span style="font-family:'ArialMT', 'Arial';">2.</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在线简历的“更新时间”记录为“保存”操作时间</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3.增加简历附件（若有）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42524" class="ax_default connector">
+        <img id="u42524_seg0" class="img " src="images/保存与归档的处理/u42524_seg0.png" alt="u42524_seg0"/>
+        <img id="u42524_seg1" class="img " src="images/保存与归档的处理/u42524_seg1.png" alt="u42524_seg1"/>
+        <img id="u42524_seg2" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42524_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u42525" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u42526" class="ax_default box_1">
+        <img id="u42526_img" class="img " src="images/保存与归档的处理/u42485.png"/>
+        <!-- Unnamed () -->
+        <div id="u42527" class="text" style="visibility: visible;">
+          <p><span>是否手动上传</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42528" class="ax_default connector">
+        <img id="u42528_seg0" class="img " src="images/保存与归档的处理/u42528_seg0.png" alt="u42528_seg0"/>
+        <img id="u42528_seg1" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42528_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42529" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42530" class="ax_default connector">
+        <img id="u42530_seg0" class="img " src="images/保存与归档的处理/u42530_seg0.png" alt="u42530_seg0"/>
+        <img id="u42530_seg1" class="img " src="images/保存与归档的处理/u42530_seg1.png" alt="u42530_seg1"/>
+        <img id="u42530_seg2" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42530_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u42531" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u42532" class="ax_default box_1">
+        <img id="u42532_img" class="img " src="images/简历判重－流程图/u42402.png"/>
+        <!-- Unnamed () -->
+        <div id="u42533" class="text" style="visibility: visible;">
+          <p><span>弹窗选项：</span></p><p><span>直接覆盖</span></p><p><span>覆盖并保留归档</span></p><p><span>仅上传附件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42534" class="ax_default box_1">
+        <div id="u42534_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42535" class="text" style="visibility: visible;">
+          <p><span style="font-family:'ArialMT', 'Arial';">1. 更新在线结构化简历内容</span></p><p><span style="font-family:'ArialMT', 'Arial';">2.</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在线简历的“更新时间”记录为“保存”操作时间</span></p><p><span style="font-family:'ArialMT', 'Arial';">3.增加简历附件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42536" class="ax_default connector">
+        <img id="u42536_seg0" class="img " src="images/保存与归档的处理/u42536_seg0.png" alt="u42536_seg0"/>
+        <img id="u42536_seg1" class="img " src="images/联想搜索ui_done/u40146_seg1.png" alt="u42536_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42537" class="text" style="visibility: visible;">
+          <p><span>直接覆盖</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42538" class="ax_default connector">
+        <img id="u42538_seg0" class="img " src="images/保存与归档的处理/u42538_seg0.png" alt="u42538_seg0"/>
+        <img id="u42538_seg1" class="img " src="images/保存与归档的处理/u42538_seg1.png" alt="u42538_seg1"/>
+        <img id="u42538_seg2" class="img " src="images/保存与归档的处理/u42538_seg2.png" alt="u42538_seg2"/>
+        <img id="u42538_seg3" class="img " src="images/保存与归档的处理/u42538_seg3.png" alt="u42538_seg3"/>
+        <img id="u42538_seg4" class="img " src="images/项目一键发布逻辑/u13763_seg3.png" alt="u42538_seg4"/>
+        <img id="u42538_seg5" class="img " src="images/项目一键发布逻辑/u13763_seg4.png" alt="u42538_seg5"/>
+        <!-- Unnamed () -->
+        <div id="u42539" class="text" style="visibility: visible;">
+          <p><span>覆盖并保留归档</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42540" class="ax_default box_1">
+        <div id="u42540_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42541" class="text" style="visibility: visible;">
+          <p><span>1. 增加简历附件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42542" class="ax_default connector">
+        <img id="u42542_seg0" class="img " src="images/保存与归档的处理/u42542_seg0.png" alt="u42542_seg0"/>
+        <img id="u42542_seg1" class="img " src="images/保存与归档的处理/u42542_seg1.png" alt="u42542_seg1"/>
+        <img id="u42542_seg2" class="img " src="images/项目一键发布逻辑/u13731_seg1.png" alt="u42542_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u42543" class="text" style="visibility: visible;">
+          <p><span>仅上传附件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42544" class="ax_default box_1">
+        <div id="u42544_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u42545" class="text" style="visibility: visible;">
+          <p><span style="font-family:'ArialMT', 'Arial';">1. 更新在线结构化简历</span></p><p><span style="font-family:'ArialMT', 'Arial';">2.</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在线简历的“更新时间”记录为“保存”操作时间</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3.增加简历附件（若有）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u42546" class="ax_default connector">
+        <img id="u42546_seg0" class="img " src="images/保存与归档的处理/u42546_seg0.png" alt="u42546_seg0"/>
+        <img id="u42546_seg1" class="img " src="images/面试安排面试评价的保存逻辑/u13384_seg3.png" alt="u42546_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u42547" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
