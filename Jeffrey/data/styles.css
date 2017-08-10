@@ -1,5 +1,5 @@
 ﻿.ax_default {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -31,28 +31,28 @@
 ._图片 {
 }
 .heading_1 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:bold;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 .heading_2 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:bold;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 .heading_3 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:bold;
   font-style:normal;
   font-size:18px;
   text-align:left;
 }
 .heading_4 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:bold;
   font-style:normal;
   font-size:14px;
@@ -62,20 +62,20 @@
   text-align:left;
 }
 .heading_5 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:bold;
   font-style:normal;
   text-align:left;
 }
 .heading_6 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:bold;
   font-style:normal;
   font-size:10px;
   text-align:left;
 }
 ._形状 {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:normal;
   font-style:normal;
 }
@@ -116,7 +116,7 @@
   color:#FFFFFF;
 }
 .shape {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -138,6 +138,24 @@
   color:#169BD5;
 }
 .box_1 {
+}
+._分割线 {
+}
+._次按钮（动作列表） {
+  font-family:'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC';
+  font-weight:200;
+  font-style:normal;
+  font-size:18px;
+  color:#333333;
+  text-align:center;
+}
+._退出按钮（动作列表） {
+  font-family:'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC';
+  font-weight:200;
+  font-style:normal;
+  font-size:18px;
+  color:#FF3300;
+  text-align:center;
 }
 .listitem {
 }
@@ -190,7 +208,7 @@
   color:#000000;
 }
 ._btn-default {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -204,7 +222,7 @@
   line-height:20px;
 }
 ._btn-primary {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -218,7 +236,7 @@
   line-height:20px;
 }
 ._btn-success {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -232,7 +250,7 @@
   line-height:20px;
 }
 ._btn-link {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -246,21 +264,21 @@
   line-height:20px;
 }
 .label1 {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:14px;
   line-height:20px;
 }
 .form_text_field {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   line-height:20px;
 }
 .dropdown-menu {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -274,7 +292,7 @@
   line-height:20px;
 }
 ._nav-tab_background_tabs {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -289,7 +307,7 @@
   color:#FFFFFF;
 }
 ._nav-pills_background_pills {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -301,14 +319,14 @@
   color:#2A6496;
 }
 ._navbar-default__content_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   color:#555555;
   line-height:20px;
 }
 ._navbar-default__background_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:18px;
@@ -319,7 +337,7 @@
   color:#2A6496;
 }
 ._navbar-inverse__background_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:18px;
@@ -335,7 +353,7 @@
   color:#FFFFFF;
 }
 ._breadcrumb_background {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -343,7 +361,7 @@
   line-height:20px;
 }
 ._pagination {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -351,7 +369,7 @@
   line-height:26px;
 }
 ._pager_btn {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -359,7 +377,7 @@
   line-height:20px;
 }
 ._alert-info {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -367,7 +385,7 @@
   line-height:20px;
 }
 ._alert-warning {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -375,14 +393,14 @@
   line-height:20px;
 }
 ._btn-grp__btn-default__ends_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:#333333;
 }
 ._btn-grp__btn-default__center_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -393,7 +411,7 @@
 ._btn-grp_divider {
 }
 ._dropdown_menuitem {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
 }
@@ -401,7 +419,7 @@
   color:#252525;
 }
 ._dropdown-menu__dropdown-header {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -409,7 +427,7 @@
   line-height:17px;
 }
 ._panel__panel-default__content_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -417,7 +435,7 @@
   line-height:20px;
 }
 ._panel__panel-default__no_title_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -425,7 +443,7 @@
   line-height:20px;
 }
 ._panel__panel-default__header_ {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -433,14 +451,14 @@
   line-height:20px;
 }
 ._modal-dialogue_header {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:18px;
   line-height:25px;
 }
 ._modal-dialogue_content {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -454,7 +472,7 @@
 .tooltip_arrow {
 }
 .badge {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:12px;
@@ -465,14 +483,14 @@
   color:#428BCA;
 }
 ._well {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   line-height:20px;
 }
 ._well__well-lg {
-  font-family:'ArialMT', 'Arial';
+  font-family:'';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -484,14 +502,14 @@
   line-height:20px;
 }
 ._一级标题 {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:36px;
   text-align:left;
 }
 ._二级标题 {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:30px;
@@ -535,18 +553,60 @@
   text-align:left;
 }
 .heading_11 {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 .heading_21 {
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-family:'';
   font-weight:700;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 .shape1 {
+}
+._36号字_顶部标题、大按钮、弹窗提示主标题_ {
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:18px;
+  text-align:left;
+}
+._34号字_单行列表内，左方主标题文字字） {
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:17px;
+  text-align:left;
+}
+._32号字_单行列表内，右方操作说明的文字__） {
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  text-align:left;
+}
+._30号字_服务主标题，例如双行列表内的下方描述信息。__） {
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:15px;
+  text-align:left;
+}
+._28号字_页面备注信息及列表的表头说明文字__） {
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
+  text-align:left;
+}
+._24号字_最小说明文本，例如列表时间态、版权信息等） {
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:12px;
+  text-align:left;
 }
