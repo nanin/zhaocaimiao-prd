@@ -127,6 +127,9 @@
 .image {
   color:#000000;
 }
+.checkbox {
+  text-align:left;
+}
 .placeholder {
 }
 .button1 {
@@ -187,7 +190,7 @@
   color:#000000;
   text-align:left;
 }
-.checkbox {
+.checkbox1 {
   text-align:left;
 }
 .radio_button {
@@ -618,7 +621,7 @@
   color:#666666;
 }
 .neo-dropdown {
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei';
+  font-family:'Microsoft YaHei';
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -629,4 +632,6 @@
 }
 .radio_button1 {
   text-align:left;
+}
+.vertical_line {
 }
